@@ -1,0 +1,27 @@
+.liste{
+    display:flex ;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    align-items: center;
+    gap: 10PX;
+}
+
+.liste i{
+    font-size: 2rem;
+}
+
+.liste p{
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    transform: rotate(90deg);
+    margin-bottom: 30PX;
+}
+
+.liste span{
+    background-color: #bbb;
+    width: 2px;
+    height: 70px;
+}

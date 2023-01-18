@@ -1,0 +1,27 @@
+.image{
+    width: 20rem;
+    height: auto;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.nom{
+    font-size: 80px;
+}
+
+.description{
+    font-size: 25px;
+}
+
+.description pre {
+    font-size: 2em;
+}
+
+.description p{
+    color:#bbb;
+}
