@@ -1,9 +1,6 @@
 .liste{
     display:flex ;
     flex-direction: column;
-    position: fixed;
-    right: 0;
-    bottom: 5%;
     align-items: center;
     gap: 10PX;
 }
@@ -25,3 +22,23 @@
     width: 2px;
     height: 70px;
 }
+
+@media (max-width:1281px){
+    .liste{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .liste span{
+       display: none;
+    }
+
+    .liste p{
+        display: none;
+     }
+     .liste i{
+        font-size: 1.3em;
+        margin-right: 30px;
+     }
+    }

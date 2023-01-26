@@ -1,25 +1,17 @@
 import Image from "next/image";
 import naruto from '../public/naruto.png'
 import styles from '../styles/Accueil.module.css'
+import Presentation from "./Presentation";
 
 export default function Accueil() {
     return <>
 
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__fadeInDown`}>
 
             <Image src={naruto} alt='Mon photo' className={styles.image} />
-
-            <div className={styles.text}>
-
-                <h1 className={styles.nom}>James Bell</h1>
-
-                <div className={styles.description}>
-
-                    <pre data-wait="3000" data-words='["James Bell_","Android Dev","Web Dev"]'
-                        className="txt-type">Web developer</pre>
-
-                    <p>Je suis un développeur junior compétent en CSS, HTML, JavaScript et frameworks. Je  m&apos; efforce de créer des applications et des sites web performants en apprenant de nouveaux outils et en me perfectionnant.</p>
-                </div>
+            <div className = "d-flex flex-column align-items-center gap-5 align-items-baseline">
+            <Presentation />
+                <button className="btn btn-lg border-primary shadow-lg">Telechager CV <i className="bi bi-download"></i></button>
             </div>
         </div>
 

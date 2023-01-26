@@ -1,14 +1,19 @@
 html{
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, * ::before, *::after{
   box-sizing: inherit;
 }
 
-
-p{
- width: 650px;
+body{
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color  : #fff;
+  position: relative;
 }
 
 a{
@@ -16,6 +21,11 @@ a{
   text-decoration: none;
 }
 
+
 li{
   list-style: none;
 }
+
+@media (max-width:500px){p{
+  width: 50px;
+ }}

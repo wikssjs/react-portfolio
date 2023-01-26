@@ -1,13 +1,15 @@
-import Contact_Info from "./Contact_Info";
+import Contact_links from "./Contact_Links";
 import Header from "./Header";
-import Links from "./Links";
+import styles from '../styles/Layout.module.css'
 
 export default function Layout(props) {
     return <>
+    <div className={styles.wrapper}>
+
     <Header/>
     {props.children}
-    <Contact_Info/>
-    <Links/>
+    <Contact_links/>
+    </div>
     </>
 }
 

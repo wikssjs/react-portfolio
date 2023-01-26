@@ -1,5 +1,4 @@
-
-.menu{
+.menu {
     display: flex;
     width: 100%;
     gap: 26vw;
@@ -8,27 +7,121 @@
     font-size: 1.5em;
 }
 
-.nom{
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-}
-.image{
-    width: 80px;
-    height: 60px;
-    transform: rotate(45deg);
 
-}
 .liste {
     display: flex;
     text-decoration: none;
     list-style: none;
     justify-content: space-between;
     gap: 30px;
+    flex-direction: row;
+    width: 100%;
 }
 
-.liste li{
-    
+.liste li {
+
     display: flex;
     gap: 10px;
+}
+
+.liste:nth-child(1){
+    font-size: 2em;
+    background-color: aqua;
+}
+
+.navbar_toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+.navbar_toggler .bar {
+    width: 40px;
+    height: 2px;
+    margin-bottom: 10px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10%;
+    transition: .5s;
+
+}
+
+.input {
+    display: none;
+}
+
+.home{
+    animation-duration: 2.5s;
+}
+
+.about{
+    animation-duration: 3s;
+}
+.project{
+    animation-duration: 3.5s;
+
+}
+
+.contact{
+    animation-duration: 4s;
+
+}
+
+@media (max-width:1281px){
+    .menu {
+        justify-content: space-between;
+    }
+
+    .liste {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: grid;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        justify-content: left;
+        transform: translateY(-200%);
+        top: 75px;
+        z-index: 100;
+        transition: .6s;
+    }
+
+    .navbar_toggler {
+        display: grid;
+    }
+
+    .input:checked~nav .liste {
+        display: grid;
+        transform: translateY(25px);
+        transition: .6s;
+    }
+    
+    .input:checked~nav .navbar_toggler .bar:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    
+    .input:checked~nav .navbar_toggler .bar:nth-child(2) {
+        display: none;
+    }
+    
+    .input:checked~nav .navbar_toggler .bar:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (min-width:0) and (max-width:300px){
+    .liste{
+        width: 118%;
+    }
 }

@@ -1,0 +1,102 @@
+.nom{
+    font-size: 4.5em;
+     font-weight: bold; 
+     color:seashell;
+     animation: neon 1s linear infinite alternate;
+}
+
+@keyframes neon{
+    from{
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #21D4FD,
+            0 0 25px #21D4FD;
+    }
+    to{
+        text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #21D4FD,
+            0 0 25px #21D4FD,
+            0 0 30px #21D4FD;
+    }
+}
+
+.description{
+    font-size: 1.5em;
+}
+
+.description pre {
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.description p{
+    color:#fff;
+    width: 800px;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .description p{
+        font-size: .7em;
+        width: 500px;
+    }
+    .description pre{
+        font-size: 1.5em;
+    }
+}
+@media (min-width:0) and (max-width:300px){
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+      }
+      .text h1{
+        font-size: 3em
+      }
+      .description p{
+          font-size: .7em;
+          width: 100%;
+          margin: auto;
+      }
+  
+      .description pre{
+          font-size: 1.5em;
+      }
+  
+      .nom{
+          font-size: 3.5em;
+      }
+}
+@media (min-width:300px) and (max-width:500px){
+
+    .text{
+      margin-left: 20px;
+      
+    }
+    .description p{
+        font-size: .7em;
+        width: 360px;
+        margin: auto;
+    }
+
+    .description pre{
+        font-size: 1em;
+    }
+
+    .nom{
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width:800px) and (max-width:1281px){
+    .description p{
+        font-size: .8em;
+        width: 700px;
+    }
+}

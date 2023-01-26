@@ -9,11 +9,7 @@ export default function Home() {
     <>
 
       <main>
-
-      <div>
       <Accueil/>
-      </div>
-
       </main>
 
     </>
