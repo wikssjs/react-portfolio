@@ -1,19 +1,21 @@
 
-import naruto from '../public/naruto.png'
-import Image from 'next/image'
+import { useState } from 'react'
 import Accueil from '../component/Accueil'
+import Projet1 from '../component/Projet1'
+import Projet2 from '../component/Projet2'
 export default function Home() {
 
-  return (
-
-    <>
-
-      <main>
-      <Accueil/>
-      </main>
-
-    </>
-
-  )
-
+  const [page,setPage] = useState('projet2')
+  return <>
+  {page === 'accueil'?
+  <Accueil/>
+  :
+  page ==='projet1'?
+  <Projet1/>
+  :page === 'projet2'?
+  <Projet2/>
+  :
+  404
+  }
+  </>
 }

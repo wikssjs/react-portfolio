@@ -7,7 +7,7 @@ export default function Presentation() {
         <h1 className={`${styles.nom} text-shadow`}>James Bell</h1>
 
         <div className={styles.description}>
-            <pre data-wait="3000" data-words='["James Bell_","Android Dev","Web Dev"]'
+            <pre
                 className="txt-type"><span>I Am a </span>
                 <Typewriter
                     options={{

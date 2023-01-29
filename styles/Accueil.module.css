@@ -17,6 +17,9 @@
     gap: 20px;
     background-color: #21D4FD;
 }
+.wrapper i{
+    animation-duration: 6s;
+}
 
 .wrapper button:hover{
     background-color: #21D4FD;

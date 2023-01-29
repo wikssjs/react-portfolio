@@ -1,0 +1,16 @@
+.container{
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.container .titre{
+    font-size: 5em;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.projet1{
+    max-width: 1200px;
+    height: fit-content;
+}

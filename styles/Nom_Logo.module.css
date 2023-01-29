@@ -18,9 +18,8 @@
 
 }
 .image{
+    transform:rotateX(10deg);
     width: 80px;
     height: 60px;
-    transform: rotate(45deg);
-    animation-duration: 1s;
 
 }

@@ -11,7 +11,7 @@ export default function Accueil() {
             <Image src={naruto} alt='Mon photo' className={styles.image} />
             <div className = "d-flex flex-column align-items-center gap-5 align-items-baseline">
             <Presentation />
-                <button className="btn btn-lg border-primary shadow-lg">Telechager CV <i className="bi bi-download"></i></button>
+                <button className="btn btn-lg border-primary shadow-lg">Telechager CV <i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
             </div>
         </div>
 
