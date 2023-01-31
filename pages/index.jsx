@@ -5,7 +5,7 @@ import Projet1 from '../component/Projet1'
 import Projet2 from '../component/Projet2'
 export default function Home() {
 
-  const [page,setPage] = useState('projet2')
+  const [page,setPage] = useState('projet1')
   return <>
   {page === 'accueil'?
   <Accueil/>

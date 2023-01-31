@@ -4,12 +4,12 @@ import styles from '../styles/Layout.module.css'
 
 export default function Layout(props) {
     return <>
-    <div className={styles.wrapper}>
+        <div className={styles.wrapper}>
 
-    <Header/>
-    {props.children}
-    <Contact_links/>
-    </div>
+            <Header />
+            {props.children}
+            <Contact_links />
+        </div>
     </>
 }
 
