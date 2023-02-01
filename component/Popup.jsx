@@ -8,11 +8,14 @@ export default function Popup({ anim,closePopup, project }) {
         setAddAnim(!addAnim);
     }
     return (
-        <div className={`${styles.popup} animate__animated ${anim}`}>
+        <div className={`${styles.popup} animate__animated  ${addAnim ? 'animate__zoomOut':'animate__zoomIn'}`}  onClick={() => {
+            closePopup();
+            add();
+          }}>
             <div className={styles.popup_inner}>
                 <button className={`${styles.button} `} onClick={closePopup}><i className='bi bi-x-lg'></i></button>
-                <Image src={project.image} className={styles.image} />
-
+                {/* <Image src={project.image} className={styles.image} alt="projet image" /> */}
+                <video className={`${styles.image} bg-body`} src="/video.mp4" autoPlay controls></video>
                 <div className={styles.contenu}>
                     <h1 className={styles.type}>{project.type}</h1>
                     <p className={styles.nom}>{project.nom}</p>

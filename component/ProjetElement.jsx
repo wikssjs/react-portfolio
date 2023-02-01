@@ -10,7 +10,7 @@ import { useState } from "react"
 
 const projet = [
     {
-        description : "Une application avec Android Studio et Java qui utilise une API sur RapidAPI. Cette application permet aux utilisateurs de réaliser des tâches spécifiques en utilisant les données fournies par l'API. Les fonctionnalités incluent la possibilité de rechercher des informations, de consulter des données en temps réel, de payer via PayPal ou carte de crédit, et de gérer un panier d'achat. Les utilisateurs peuvent ajouter des articles à leur panier, consulter leur panier et finaliser leur achat. L'application est facile à utiliser et est conçue pour être efficace et intuitive."
+        description : "Cette application Android développée en Java utilise une API RapidAPI pour offrir des fonctionnalités telles que la recherche de données, la visualisation en temps réel, les paiements via PayPal et carte de crédit, et la gestion d'un panier d'achat. Les utilisateurs peuvent ajouter des articles, consulter leur panier et finaliser leur achat en toute simplicité. L'application est facile à utiliser et conçue pour une expérience efficace et intuitive."
     },
 
     {
@@ -34,7 +34,9 @@ export default function ProjetElement({ image, type, nom,anim,id }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
-    setIsOpen(!isOpen);
+    
+    setTimeout(function() {
+      setIsOpen(!isOpen);    }, 100);   
   };
 
   return (<>

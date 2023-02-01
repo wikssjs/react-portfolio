@@ -1,9 +1,7 @@
-
-.popup{
+.popup {
     background: #23272b;
-    
-    box-shadow:  -7px -7px 14px #111315,
-                 7px 7px 14px #353b41;    height: 100vh;
+    box-shadow: -7px -7px 14px #111315, 7px 7px 14px #353b41;
+    height: 100vh;
     width: 100%;
     position: fixed;
     left: 0;
@@ -13,9 +11,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.popup_inner{
+    background-color: #3c4fe0;
+  }
+  
+  .popup_inner {
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,85 +22,89 @@
     justify-content: space-evenly;
     gap: 0;
     width: 85%;
-    height: 550px;
+    height: 60%;
     border-radius: 29px;
     background: #23272b;
-    box-shadow:  -7px -7px 14px #111315,
-                 7px 7px 14px #353b41;
+    box-shadow: -7px -7px 14px #111315, 7px 7px 14px #353b41;
     transition: all .5s ease-in-out;
-                }
-.popup .image{
+  }
+  
+  .popup .image {
     width: 500px;
     height: 400px;
+    padding: 10px;
     border-radius: 30px;
-}
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
 
-.contenu{
+  }
+  
+  .contenu {
     display: flex;
     flex-direction: column;
     height: 100%;
     align-items: baseline;
     width: 40%;
     justify-content: space-evenly;
-}
-
-.popup a:hover{
-}
-
-.popup .nom{
+  }
+  
+  .popup a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  .popup .nom {
     font-size: 2.5em;
     color: white;
     width: fit-content;
     text-align: center;
     margin-top: 20px;
-}
-.popup .type{
+  }
+  
+  .popup .type {
     font-size: 1.1em;
     letter-spacing: 1px;
     font-weight: lighter;
     color: #ff014f;
     text-align: center;
     margin-top: 20px;
-}
-
-.popup .description{
+  }
+  
+  .popup .description {
     font-size: 1.1em;
     font-weight: lighter;
     text-align: justify;
     word-spacing: 2px;
     color: white;
-}
-
-.button{
+  }
+  
+  .button {
     position: absolute;
     right: 10px;
     top: 10px;
     width: 40px;
     height: 40px;
-    background:none;
+    background: none;
     color: white;
     outline: none;
     border: none;
     border-radius: 50%;
     background: #23272b;
-    box-shadow:  5px 5px 10px #0e1011,
-                 -5px -5px 10px #383e45;
-}
-
-.popup .image_wrapper{
+    box-shadow: 5px 5px 10px #0e1011, -5px -5px 10px #383e45;
+  }
+  
+  .popup .image_wrapper {
     width: 100px;
-}
-
-
-.popUpContainer{
+  }
+  
+  .popUpContainer {
     background-color: aqua;
-}
-
-.link_buttons{
+  }
+  
+  .link_buttons {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-}
+    width: 80%;
+  }
 /* CSS */
 .link_buttons .link ,.github{
   align-items: center;
@@ -146,4 +149,238 @@
 .link_buttons .link:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+@media screen and (max-width: 1280px) {
+    .popup_inner{
+        height: 75%;
+    }
+    .contenu{
+        align-items: center;
+    }
+}
+/*add media queries for me to make this code responsive*/
+@media screen and (max-width: 1050px) {
+    .popup{
+        height: 100%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner {
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    align-items: center;
+    border-radius: 29px;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .popup .image {
+    width: 85%;
+    height: 60%;
+    border-radius: 30px;
+  }
+  
+  .contenu {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+  
+  .popup .nom {
+    font-size: 1.5em;
+
+  }
+  
+  .popup .type {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  
+  .popup .description {
+    font-size: 1em;
+    width: 90%;
+  }
+  
+  .link_buttons {
+    gap: 20px;
+    width: 60%;
+  }
+  
+  
+  .popup .image_wrapper {
+    width: 100%;
+  }
+}
+
+/*add media queries for me to make this code responsive*/
+@media screen and (max-width: 820px) {
+    .popup{
+        height: 100%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner {
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    align-items: center;
+    border-radius: 29px;
+  }
+  
+  .popup .image {
+    width: 85%;
+    height: 60%;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  
+  .contenu {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+  
+  .popup .nom {
+    font-size: 1.5em;
+
+  }
+  
+  .popup .type {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  
+  .popup .description {
+    font-size: 1em;
+    width: 90%;
+  }
+  
+  .link_buttons {
+    gap: 20px;
+    width: 70%;
+  }
+  
+  
+  .popup .image_wrapper {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+    .popup{
+        height: 100%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner {
+    top: 1%;
+    flex-direction: column;
+    height: 150%;
+    width: 95%;
+    align-items: center;
+    border-radius: 29px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .popup .image {
+    width: 85%;
+    height: 30%;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #ff014f;
+  }
+  
+  .contenu {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+  
+  .popup .nom {
+    font-size: 1.5em;
+
+  }
+  
+  .popup .type {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  
+  .popup .description {
+    font-size: 1em;
+    width: 90%;
+  }
+  
+  .link_buttons {
+    gap: 20px;
+    width: 70%;
+  }
+  
+  
+  .popup .image_wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width:380px){
+    .popup{
+        height: 101%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner{
+        height: 150%;
+        gap: 30px;
+        top: 0%;
+    }
+    .link_buttons{
+        width: 90%;
+    }
+    .link_buttons .button{
+
+        width: 10px;
+    }
+    .contenu{
+        font-size: .8em;
+    }
+}
+
+@media (max-width:360px){
+    .popup{
+        height: 101%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner{
+        height: 150%;
+        gap: 30px;
+        top: 3%;
+    }
+    .link_buttons{
+        width: 90%;
+    }
+}
+
+@media (max-width:300px){
+    .popup{
+        height:101%;
+        overflow:auto;
+        overflow: scroll;
+    }
+    .popup_inner{
+        height: 160%;
+        gap: 30px;
+        top: 05%;
+        gap: 58px;
+    }
+    .popup .description{
+        font-size: .8em;
+    }
+    .link_buttons{
+        width: 100%;
+    }
 }
