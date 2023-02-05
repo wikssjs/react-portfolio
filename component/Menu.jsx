@@ -3,7 +3,7 @@ import styles from '../styles/Menu.module.css'
 import Nom_Logo from './Nom_Logo';
 import { useState,useEffect } from 'react';
 
-export default function Menu() {
+export default function Menu({setPage}) {
 
     const [scrollY, setScrollY] = useState(0);
 
@@ -17,7 +17,7 @@ export default function Menu() {
 
         <nav className={`${styles.menu} ${scrollY >180 ? styles.menu_sm: '' }`}>
 
-            <Nom_Logo />
+            <Nom_Logo setPage={setPage}/>
 
             <label htmlFor="toggle" className={`${styles.navbar_toggler} animate__animated animate__bounceInDown`}>
                 <span className={styles.bar}></span>
@@ -26,18 +26,18 @@ export default function Menu() {
             </label>
 
             <ul className={styles.liste}>
-                <li className={`${styles.home} animate__animated animate__bounceInDown `}><a href=""> <i className="bi bi-house"></i>  Home</a></li>
-                <li className={`${styles.about} animate__animated animate__bounceInDown`}> <a href=""> <i className='bi bi-person'></i> About</a></li>
+                <li onClick={()=>{setPage('accueil')}} className={`${styles.home} animate__animated animate__bounceInDown `}><a href="#"> <i className="bi bi-house"></i>  Home</a></li>
+                <li onClick={()=>{setPage('about')}} className={`${styles.about} animate__animated animate__bounceInDown`}> <a href="#"> <i className='bi bi-person'></i> About</a></li>
                 <div className={`${styles.dropdown} animate__animated animate__bounceInDown `}>
-                    <a href="#" className={styles.dropdown_button}>Projets<i className='bi bi-arrow-down-short'></i> </a>
+                    <a href="#" className={styles.dropdown_button}><i className='bi bi-briefcase'></i> Projets<i className='bi bi-arrow-down-short'></i> </a>
                     <ul className={styles.dropdown_content}>
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">Web</a></li>
+                        <li onClick={()=>{setPage('projet1')}}><a href="#"> <i className='bi bi-android2'></i> Android</a></li>
+                        <li onClick={()=>{setPage('projet2')}}><a href="#"><i className='bi bi-globe'></i> Web</a></li>
                     </ul>
                 </div>
 
 
-                <li className={`${styles.contact} animate__animated animate__bounceInDown`}><a href=""><i className='bi bi-envelope-open'></i>  Contact</a></li>
+                <li onClick={()=>{setPage('contact')}} className={`${styles.contact} animate__animated animate__bounceInDown`}><a href="#"><i className='bi bi-envelope-open'></i>  Contact</a></li>
             </ul>
         </nav>;
     </>

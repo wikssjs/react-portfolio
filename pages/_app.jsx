@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'animate.css';
+import { useState } from 'react';
 import {Roboto_Flex,Montserrat,EB_Garamond} from '@next/font/google'
 import Layout from '../component/Layout';
 
@@ -12,6 +13,8 @@ const montserrat = Montserrat({subsets:['latin']});
 const j = EB_Garamond({subsets:['latin']});
 
 export default function App({ Component, pageProps }) {
+  const [page,setPage] = useState('accueil')
+
   return  <>
 
   <style jsx global>
@@ -37,11 +40,15 @@ export default function App({ Component, pageProps }) {
         color: #fff;
         text-decoration :none
       }
+      span{
+        font-family : ${roboto.style.fontFamily}
+
+      }
     
     `}
   </style>
-  <Layout>
-  <Component {...pageProps} />
+  <Layout setPage={setPage}>
+  <Component page = {page} {...pageProps} />
   </Layout>
   </>
 }

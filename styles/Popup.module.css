@@ -3,7 +3,6 @@
     box-shadow: -7px -7px 14px #111315, 7px 7px 14px #353b41;
     height: 100vh;
     width: 100%;
-    position: fixed;
     left: 0;
     top: 0;
     z-index: 300;
@@ -12,14 +11,16 @@
     justify-content: center;
     align-items: center;
     background-color: #3c4fe0;
+    position: fixed;
+    
   }
   
   .popup_inner {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    position: absolute;
     gap: 0;
     width: 85%;
     height: 60%;
@@ -91,6 +92,10 @@
     background: #23272b;
     box-shadow: 5px 5px 10px #0e1011, -5px -5px 10px #383e45;
   }
+  .button:hover{
+  box-shadow: 16px 16px 33px #121212,
+  -16px -16px 33px #303030;;
+  }
   
   .popup .image_wrapper {
     width: 100px;
@@ -152,8 +157,12 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .popup{
+    background-color: blue;
+  }
     .popup_inner{
-        height: 75%;
+        height: 85%;
+
     }
     .contenu{
         align-items: center;
@@ -165,20 +174,20 @@
         height: 100%;
         overflow:auto;
         overflow: scroll;
+        background-color: rosybrown;
+
     }
     .popup_inner {
     flex-direction: column;
-    height: auto;
+    height: 95%;
     width: 95%;
     align-items: center;
     border-radius: 29px;
-    margin-top: 20px;
-    justify-content: space-between;
   }
   
   .popup .image {
-    width: 85%;
-    height: 60%;
+    width: 55%;
+    height: 40%;
     border-radius: 30px;
   }
   
@@ -214,24 +223,84 @@
   }
 }
 
+@media screen and (max-width: 1050px) and (max-height:290px) {
+  .popup{
+      height: 100%;
+      overflow:auto;
+      overflow: scroll;
+      background-color: blue;
+      animation-duration: .1s;
+
+  }
+  .popup_inner {
+  flex-direction: column;
+  top: 2%;
+  height: 175%;
+  width: 95%;
+  align-items: center;
+  border-radius: 29px;
+}
+
+.popup .image {
+  width: 55%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.contenu {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}
+
+.popup .nom {
+  font-size: 1.5em;
+
+}
+
+.popup .type {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.popup .description {
+  font-size: 1em;
+  width: 90%;
+}
+
+.link_buttons {
+  gap: 20px;
+  width: 60%;
+}
+
+
+.popup .image_wrapper {
+  width: 100%;
+}
+}
+
 /*add media queries for me to make this code responsive*/
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (max-height:400px) {
     .popup{
         height: 100%;
         overflow:auto;
         overflow: scroll;
+        background-color:green;
+
     }
     .popup_inner {
     flex-direction: column;
-    height: auto;
+    top: 5%;
+    height: 150%;
     width: 95%;
     align-items: center;
-    border-radius: 29px;
+    justify-content: start;
+    border-radius: 29px;    
   }
   
   .popup .image {
-    width: 85%;
-    height: 60%;
+    width: 55%;
+    height: auto;
     border-radius: 30px;
     margin-top: 20px;
   }
@@ -243,7 +312,7 @@
   }
   
   .popup .nom {
-    font-size: 1.5em;
+    font-size: 1.3em;
 
   }
   
@@ -266,6 +335,63 @@
   .popup .image_wrapper {
     width: 100%;
   }
+}
+/*add media queries for me to make this code responsive*/
+@media screen and (max-width: 820px) and (max-height:310px) {
+  .popup{
+      height: 100%;
+      overflow:auto;
+      overflow: scroll;
+      background-color:gold;
+
+  }
+  .popup_inner {
+  flex-direction: column;
+  top: 5%;
+  height: 160%;
+  width: 95%;
+  align-items: center;
+  justify-content: start;
+  border-radius: 29px;    
+}
+
+.popup .image {
+  width: 55%;
+  height: auto;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.contenu {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}
+
+.popup .nom {
+  font-size: 1.3em;
+
+}
+
+.popup .type {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.popup .description {
+  font-size: 1em;
+  width: 90%;
+}
+
+.link_buttons {
+  gap: 20px;
+  width: 70%;
+}
+
+
+.popup .image_wrapper {
+  width: 100%;
+}
 }
 
 
@@ -274,30 +400,25 @@
         height: 100%;
         overflow:auto;
         overflow: scroll;
+        background-color: #ff014f;
+
     }
     .popup_inner {
-    top: 1%;
+    top: 2%;
     flex-direction: column;
-    height: 150%;
-    width: 95%;
+    height: 95%;
+    width: 85%;
     align-items: center;
-    border-radius: 29px;
     justify-content: center;
+    border-radius: 29px;
     gap: 20px;
   }
-  
+  .contenu{
+  }
   .popup .image {
     width: 85%;
-    height: 30%;
+    height: 40%;
     border-radius: 30px;
-    margin-top: 20px;
-    background-color: #ff014f;
-  }
-  
-  .contenu {
-    width: 100%;
-    height: 50%;
-    align-items: center;
   }
   
   .popup .nom {
@@ -311,29 +432,82 @@
   }
   
   .popup .description {
-    font-size: 1em;
+    font-size: .9em;
     width: 90%;
   }
   
   .link_buttons {
     gap: 20px;
-    width: 70%;
+    width: 80%;
   }
+
   
   
   .popup .image_wrapper {
     width: 100%;
   }
 }
+@media screen and (max-width: 500px) and (max-height:310px) {
+  .popup{
+      height: 100%;
+      overflow:auto;
+      overflow: scroll;
+      background-color: #ff014f;
 
+  }
+  .popup_inner {
+  top: 2%;
+  flex-direction: column;
+  height: 205%;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 29px;
+  gap: 20px;
+}
+.contenu{
+}
+.popup .image {
+  width: 85%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.popup .nom {
+  font-size: 1.5em;
+
+}
+
+.popup .type {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.popup .description {
+  font-size: .9em;
+  width: 90%;
+}
+
+.link_buttons {
+  gap: 20px;
+  width: 80%;
+}
+
+
+
+.popup .image_wrapper {
+  width: 100%;
+}
+}
 @media (max-width:380px){
     .popup{
         height: 101%;
         overflow:auto;
         overflow: scroll;
+        background-color: yellow;
     }
     .popup_inner{
-        height: 150%;
+        height: 100%;
         gap: 30px;
         top: 0%;
     }
@@ -354,15 +528,36 @@
         height: 101%;
         overflow:auto;
         overflow: scroll;
+        background-color: turquoise;
     }
     .popup_inner{
-        height: 150%;
-        gap: 30px;
-        top: 3%;
+        height: 90%;
+        justify-content: start;
+        align-items: center;
+        justify-content: center;
     }
     .link_buttons{
         width: 90%;
     }
+}
+@media (max-width:360px){
+  .popup{
+      height: 101%;
+      overflow:auto;
+      overflow: scroll;
+      background-color: turquoise;
+  }
+  .popup_inner{
+    top: 2%;
+      height: 115%;
+      width: 90%;
+      justify-content: start;
+      align-items: center;
+      justify-content: center;
+  }
+  .link_buttons{
+      width: 90%;
+  }
 }
 
 @media (max-width:300px){
@@ -370,6 +565,7 @@
         height:101%;
         overflow:auto;
         overflow: scroll;
+        background-color: red;
     }
     .popup_inner{
         height: 160%;

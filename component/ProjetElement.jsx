@@ -6,6 +6,7 @@ import ecommerce from '../public/ecommerce.jpg'
 import blackjack from '../public/blackjack.jpg'
 import todo from '../public/todo.jpg'
 import quiz from '../public/quiz.png'
+import javascript from '../public/javascript.png'
 import { useState } from "react"
 
 const projet = [
@@ -25,19 +26,27 @@ const projet = [
     {
         description:"Une application de météo qui utilise une API pour fournir des informations en temps réel sur les conditions météorologiques. Les fonctionnalités incluent la possibilité de rechercher des informations météorologiques par ville ou par géolocalisation, de consulter les prévisions à court et à long terme, de consulter les données sur la température, la pression atmosphérique, l'humidité, les vents, et les précipitations. L'application est conçue pour être facile à utiliser et à comprendre pour les utilisateurs."
     },
+    {
+      description:"un portfolio en ligne qui présente mes compétences et mes réalisations. Grâce à une interface utilisateur intuitive, les utilisateurs peuvent facilement naviguer à travers mes projets les plus récents et découvrir mes compétences en développement web. Avec ce portfolio en ligne, je peux mettre en valeur mes talents et mes expériences pour montrer ce que je peux faire."
+    }
     
     
     
 ]
 
-export default function ProjetElement({ image, type, nom,anim,id }) {
+export default function ProjetElement({ image, type, nom,anim,id,video,github,lien,languages }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
-    
-    setTimeout(function() {
-      setIsOpen(!isOpen);    }, 100);   
-  };
+    if(isOpen==false){
+      setIsOpen(!isOpen); 
+    }
+    else{
+      setTimeout(()=>{
+        setIsOpen(!isOpen)
+    },500)
+    }
+    };
 
   return (<>
     <div className={`${styles.projet_wrapper} col-1 ${anim}`}>
@@ -49,13 +58,23 @@ export default function ProjetElement({ image, type, nom,anim,id }) {
           <h1 className={styles.type}>{type}</h1>
           <p className={styles.nom}>{nom}<i className={`${styles.icon} bi bi-arrow-up-right`}></i></p>
         </div>
+        <div className={styles.programming}>
+          {
+          languages.map((l)=>{
+            // eslint-disable-next-line react/jsx-key
+            return <span>{l}</span>
+          })
+          }
+        </div>
       </a>
     </div>
       {isOpen && (
         <Popup
           closePopup={togglePopup}
           project={{image:image,type:type,nom:nom,description:projet[id].description}}
-          anim = {isOpen ? 'animate__zoomIn': "animate__zoomOut"}
+          video = {video}
+          github = {github}
+          lien={lien}
         />
       )}
   </>

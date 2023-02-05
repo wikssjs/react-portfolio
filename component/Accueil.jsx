@@ -6,7 +6,7 @@ import Presentation from "./Presentation";
 export default function Accueil() {
     return <>
 
-        <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__fadeInDown`}>
+        <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft`}>
 
             <Image src={naruto} alt='Mon photo' className={styles.image} />
             <div className="d-flex flex-column align-items-center gap-5 align-items-baseline">
