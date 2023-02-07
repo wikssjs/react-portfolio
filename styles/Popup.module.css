@@ -157,9 +157,7 @@
 }
 
 @media screen and (max-width: 1280px) {
-  .popup{
-    background-color: blue;
-  }
+
     .popup_inner{
         height: 85%;
 
@@ -174,8 +172,6 @@
         height: 100%;
         overflow:auto;
         overflow: scroll;
-        background-color: rosybrown;
-
     }
     .popup_inner {
     flex-direction: column;
@@ -228,7 +224,6 @@
       height: 100%;
       overflow:auto;
       overflow: scroll;
-      background-color: blue;
       animation-duration: .1s;
 
   }
@@ -285,7 +280,6 @@
         height: 100%;
         overflow:auto;
         overflow: scroll;
-        background-color:green;
 
     }
     .popup_inner {
@@ -342,7 +336,6 @@
       height: 100%;
       overflow:auto;
       overflow: scroll;
-      background-color:gold;
 
   }
   .popup_inner {
@@ -400,7 +393,6 @@
         height: 100%;
         overflow:auto;
         overflow: scroll;
-        background-color: #ff014f;
 
     }
     .popup_inner {
@@ -452,7 +444,6 @@
       height: 100%;
       overflow:auto;
       overflow: scroll;
-      background-color: #ff014f;
 
   }
   .popup_inner {
@@ -504,7 +495,6 @@
         height: 101%;
         overflow:auto;
         overflow: scroll;
-        background-color: yellow;
     }
     .popup_inner{
         height: 100%;
@@ -528,7 +518,6 @@
         height: 101%;
         overflow:auto;
         overflow: scroll;
-        background-color: turquoise;
     }
     .popup_inner{
         height: 90%;
@@ -545,7 +534,6 @@
       height: 101%;
       overflow:auto;
       overflow: scroll;
-      background-color: turquoise;
   }
   .popup_inner{
     top: 2%;
@@ -565,7 +553,6 @@
         height:101%;
         overflow:auto;
         overflow: scroll;
-        background-color: red;
     }
     .popup_inner{
         height: 160%;
