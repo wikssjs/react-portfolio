@@ -1,8 +1,8 @@
 
-import { useState } from 'react'
 import Accueil from '../component/Accueil'
 import Projet1 from '../component/Projet1'
 import Projet2 from '../component/Projet2'
+
 export default function Home({page}) {
 
   return <>

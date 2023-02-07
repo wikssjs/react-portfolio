@@ -3,9 +3,14 @@ import naruto from '../public/naruto.png'
 import styles from '../styles/Accueil.module.css'
 import Presentation from "./Presentation";
 
-export default function Accueil() {
-    return <>
 
+/**
+ * ma page d'accueil
+ * @returns page d'accueil
+ */
+export default function Accueil() {
+    {/** Contenu de la page d'accueil */}
+    return <>
         <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft`}>
 
             <Image src={naruto} alt='Mon photo' className={styles.image} />

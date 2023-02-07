@@ -1,8 +1,12 @@
 import styles from '../styles/Popup.module.css'
-import Image from 'next/image';
 import { useState } from 'react';
 
-export default function Popup({ anim,closePopup, project,video,github,lien }) {
+/**
+ * popup pour les projets
+ * @param {closePopup,project,video,github,lien} param0 
+ * @returns un popup avec les infos du projet clické
+ */
+export default function Popup({ closePopup, project,video,github,lien }) {
     const [addAnim, setAddAnim] = useState(false) ;
     const add = ()=>{
         setAddAnim(!addAnim);
@@ -12,7 +16,6 @@ export default function Popup({ anim,closePopup, project,video,github,lien }) {
         <div className={`${styles.popup} animate__animated  ${addAnim ? 'animate__fadeOutDown':'animate__fadeInDown'}`}>
             <div className={styles.popup_inner}>
                 <button className={`${styles.button} `} onClick={()=>{closePopup(); add()}}><i className='bi bi-x-lg'></i></button>
-                {/* <Image src={project.image} className={styles.image} alt="projet image" /> */}
                 <video className={`${styles.image} bg-body`} src={video} autoPlay controls></video>
                 <div className={styles.contenu}>
                     <h1 className={styles.type}>{project.type}</h1>

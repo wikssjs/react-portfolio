@@ -1,6 +1,11 @@
 import styles from '../styles/Presentation.module.css'
 import Typewriter from 'typewriter-effect';
 
+
+/**
+ * prensentation de la page accueil
+ * @returns ma presentation
+ */
 export default function Presentation() {
     return <div className={styles.text}>
 
@@ -17,7 +22,7 @@ export default function Presentation() {
                     }}
                 /></pre>
 
-            <p>Je suis un développeur junior compétent en CSS, HTML, JavaScript et frameworks. Je  m&apos; efforce de créer des applications et des sites web performants en apprenant de nouveaux outils et en me perfectionnant.</p>
+            <p>Je suis un développeur compétent en CSS, HTML, JavaScript et frameworks. Je  m&apos; efforce de créer des applications et des sites web performants en apprenant de nouveaux outils et en me perfectionnant.</p>
         </div>
     </div>
 }

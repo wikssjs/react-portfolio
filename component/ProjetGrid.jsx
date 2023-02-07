@@ -1,5 +1,11 @@
 import styles from '../styles/ProjetGrid.module.css'
 
+
+/**
+ * grid des pages de projets
+ * @param {children,titre,icon} param0 
+ * @returns un grid avec un children dedans
+ */
 export default function ProjetGrid({ children, titre, icon }) {
     return <div className={`${styles.container}`}>
 

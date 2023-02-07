@@ -1,10 +1,15 @@
 import styles from '../styles/Links.module.css'
 
 
-
+/**
+ * liens de mes reseaux sociaux
+ * @returns mes socials media links
+ */
 export default function Links() {
     return <>
 
+        {/**Social media links  */}
+        
         <ul className={styles.liste}>
             <li> <p>Suivez moi</p></li>
             <span></span>

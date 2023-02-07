@@ -6,6 +6,11 @@ import styles from '../styles/Projet1.module.css'
 import ProjetElement from "./ProjetElement"
 import ProjetGrid from "./ProjetGrid"
 
+
+/**
+ * ma page de projet android
+ * @returns un grid avec les projet element dedans
+ */
 export default function Projet1() {
 
 

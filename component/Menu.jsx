@@ -5,8 +5,10 @@ import { useState,useEffect } from 'react';
 
 export default function Menu({setPage}) {
 
+    //hook to get the scrollY of the page
     const [scrollY, setScrollY] = useState(0);
 
+    //hook to handleTheScroll
     useEffect(() => {
       const handleScroll = () => setScrollY(window.pageYOffset);
       window.addEventListener('scroll', handleScroll);
@@ -15,19 +17,25 @@ export default function Menu({setPage}) {
 
     return <> <input className={styles.input} type="checkbox" name="" id="toggle" />
 
+        {/**Menu  */}
         <nav className={`${styles.menu} ${scrollY >180 ? styles.menu_sm: '' }`}>
 
+            
             <Nom_Logo setPage={setPage}/>
 
+            {/**Hamburger menu pour les petites ecrans */}
             <label htmlFor="toggle" className={`${styles.navbar_toggler} animate__animated animate__bounceInDown`}>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
             </label>
 
+            {/** Menu de la pge */}
             <ul className={styles.liste}>
                 <li onClick={()=>{setPage('accueil')}} className={`${styles.home} animate__animated animate__bounceInDown `}><a href="#"> <i className="bi bi-house"></i>  Home</a></li>
                 <li onClick={()=>{setPage('about')}} className={`${styles.about} animate__animated animate__bounceInDown`}> <a href="#"> <i className='bi bi-person'></i> About</a></li>
+
+                {/**DropDown */}
                 <div className={`${styles.dropdown} animate__animated animate__bounceInDown `}>
                     <a href="#" className={styles.dropdown_button}><i className='bi bi-briefcase'></i> Projets<i className='bi bi-arrow-down-short'></i> </a>
                     <ul className={styles.dropdown_content}>
@@ -39,7 +47,7 @@ export default function Menu({setPage}) {
 
                 <li onClick={()=>{setPage('contact')}} className={`${styles.contact} animate__animated animate__bounceInDown`}><a href="#"><i className='bi bi-envelope-open'></i>  Contact</a></li>
             </ul>
-        </nav>;
+        </nav>
     </>
 
 

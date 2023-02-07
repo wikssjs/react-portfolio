@@ -1,14 +1,12 @@
 import Image from "next/image"
 import styles from '../styles/ProjetElement.module.css'
 import Popup from "./Popup"
-import meteo from '../public/meteo.png'
-import ecommerce from '../public/ecommerce.jpg'
-import blackjack from '../public/blackjack.jpg'
-import todo from '../public/todo.jpg'
-import quiz from '../public/quiz.png'
 import javascript from '../public/javascript.png'
 import { useState } from "react"
 
+/**
+ * Table d'objet contenant la description de chaque projet
+ */
 const projet = [
     {
         description : "Cette application Android développée en Java utilise une API RapidAPI pour offrir des fonctionnalités telles que la recherche de données, la visualisation en temps réel, les paiements via PayPal et carte de crédit, et la gestion d'un panier d'achat. Les utilisateurs peuvent ajouter des articles, consulter leur panier et finaliser leur achat en toute simplicité. L'application est facile à utiliser et conçue pour une expérience efficace et intuitive."
