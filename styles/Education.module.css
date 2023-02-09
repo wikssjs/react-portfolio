@@ -1,0 +1,58 @@
+.education_wrapper h1{
+    font-size: 4.5em;
+    font-weight: bold;
+    color: seashell;
+    animation: neon 1s linear infinite alternate;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD;
+  }
+
+
+  
+  @keyframes neon {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD;
+    }
+    100% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD, 0 0 30px #21D4FD;
+    }
+  }
+
+  .education_wrapper h2{
+    color: white;
+    font-weight: bold;
+  }
+
+  .education_wrapper span{
+    color:#E8E8E8;
+    font-weight: lighter;
+    font-family: 14px;
+    
+  }
+
+  .education_wrapper p{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight:100;
+  }
+
+  .education_wrapper .image{
+    width: 40%;
+    height: auto;
+  }
+  .college_wrapper{
+  }
+
+  @media (max-width:1281px){
+
+   .education_wrapper{
+    flex-direction: column;
+   }
+
+   .college_wrapper p{
+    width: 100%;
+   }
+
+   .education_wrapper .image{
+    display: none;
+   }
+    }

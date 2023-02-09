@@ -13,10 +13,10 @@ export default function Presentation() {
 
         <div className={styles.description}>
             <pre
-                className="txt-type"><span>I Am a </span>
+                className="txt-type"><span>Je Suis Un </span>
                 <Typewriter
                     options={{
-                        strings: ['Web Developer', 'Android Developer'],
+                        strings: ['Développeur Web', 'Développeur Android'],
                         autoStart: true,
                         loop: true,
                     }}

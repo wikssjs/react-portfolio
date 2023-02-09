@@ -32,8 +32,8 @@ export default function Menu({setPage}) {
 
             {/** Menu de la pge */}
             <ul className={styles.liste}>
-                <li onClick={()=>{setPage('accueil')}} className={`${styles.home} animate__animated animate__bounceInDown `}><a href="#"> <i className="bi bi-house"></i>  Home</a></li>
-                <li onClick={()=>{setPage('about')}} className={`${styles.about} animate__animated animate__bounceInDown`}> <a href="#"> <i className='bi bi-person'></i> About</a></li>
+                <li onClick={()=>{setPage('accueil')}} className={`${styles.home} animate__animated animate__bounceInDown `}><a href="#"> <i className="bi bi-house"></i>  Accueil</a></li>
+                <li onClick={()=>{setPage('Apropos')}} className={`${styles.about} animate__animated animate__bounceInDown`}> <a href="#"> <i className='bi bi-person'></i> Apropos</a></li>
 
                 {/**DropDown */}
                 <div className={`${styles.dropdown} animate__animated animate__bounceInDown `}>

@@ -9,7 +9,7 @@ import styles from '../styles/Layout.module.css'
  */
 export default function Layout({children,setPage}) {
     return <>
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper}`}>
 
             <Header setPage={setPage}/>
             {children}

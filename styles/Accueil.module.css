@@ -1,14 +1,16 @@
 .image{
-    width: 20rem;
+    width: 25rem;
     height: auto;
 }
 
 .wrapper{
     display: flex;
     width: 100%;
+    /* height: 80vh; */
+    height: 80vh;
+    animation-duration: 1s;
     justify-content: center;
     align-items: center;
-    animation-duration: 1s;
 }
 
 .wrapper button{
@@ -20,13 +22,25 @@
     animation-duration: 6s;
 }
 
+.container{
+}
+
 .wrapper button:hover{
     background-color: #21D4FD;
     opacity: .8;
 }
 @media (max-width:1281px){
-    .wrapper{
+
+    .container{
+        margin-top: 20%;
+    }
+    .contenu{
         flex-direction: column;
         margin-top: 20%
+    }
+
+    .wrapper{
+         width: 100%;
+         height: auto;
     }
 }
