@@ -13,7 +13,7 @@ const montserrat = Montserrat({subsets:['latin']});
 const j = EB_Garamond({subsets:['latin']});
 
 export default function App({ Component, pageProps }) {
-  const [page,setPage] = useState('Apropos')
+  const [page,setPage] = useState('Contact')
 
   return  <>
 
@@ -28,7 +28,6 @@ export default function App({ Component, pageProps }) {
       }
 
       body{
-        background-color:#f4gt3;
       }
       p {
         font-family : ${roboto.style.fontFamily}

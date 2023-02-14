@@ -15,7 +15,7 @@ export default function Apropos() {
         const changeAddAnim = () => {
                 addAnim(!anim)
         }
-        return <main className='d-flex flex-column gap-5'>
+        return <main className='d-flex flex-column gap-5 container-lg shadow-lg rounded-5 p-3'>
                <AproposContenu/>
                <Education/>
         </main>

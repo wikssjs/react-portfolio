@@ -9,28 +9,30 @@ import { useRef,useEffect,useState } from 'react'
 
 export default function Education(){
     const divRef = useRef(null);
-    const [divPos, setDivPos] = useState(0);
-    const [scrollTop, setScrollTop] = useState(0);
 
-    useEffect(() => {
-      const div = divRef.current;
-      setDivPos(div.scrollY);
-    }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      const rect = divRef.current.getBoundingClientRect();
+      const isVisible = (rect.top >= 0) && (rect.top <= window.innerHeight);
 
-    useEffect(() => {
-        const handleScroll = () => {
-          setScrollTop(window.scrollY);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      });
+      if (isVisible) {
+        divRef.current.classList.add("animate__fadeInUp");
+      } else {
+        divRef.current.classList.remove("yourClassName");
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+    
 
     return <div ref={divRef} className={`${styles.education_wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft gap-5 mb-5 d-flex `}>
         <div>
 
-            <h1>Education</h1>
+            <h1>Education </h1>
 
             <div className={styles.college_wrapper}>
                 <h2>DEC EN PROGRAMMATION</h2>

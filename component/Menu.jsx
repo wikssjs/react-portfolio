@@ -45,7 +45,7 @@ export default function Menu({setPage}) {
                 </div>
 
 
-                <li onClick={()=>{setPage('contact')}} className={`${styles.contact} animate__animated animate__bounceInDown`}><a href="#"><i className='bi bi-envelope-open'></i>  Contact</a></li>
+                <li onClick={()=>{setPage('Contact')}} className={`${styles.contact} animate__animated animate__bounceInDown`}><a href="#"><i className='bi bi-envelope-open'></i>  Contact</a></li>
             </ul>
         </nav>
     </>

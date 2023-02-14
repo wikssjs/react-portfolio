@@ -38,23 +38,23 @@ export default function AproposContenu() {
                 <div className={`${styles.competences} h-100 d-flex flex-column gap-5`}>
                         <h1>Compétences</h1>
                         <div className='d-flex flex-wrap gap-3'>
-                                <h2>HTML</h2>
-                                <h2>CSS</h2>
-                                <h2>JAVASCRIPT</h2>
-                                <h2>REACTJS</h2>
-                                <h2>NEXTJS</h2>
-                                <h2>NODEJS</h2>
-                                <h2>ASP.NET</h2>
-                                <h2>SQL SERVER</h2>
-                                <h2>MYSQL</h2>
-                                <h2>MONGODB</h2>
-                                <h2>BOOSTRAP</h2>
-                                <h2>TAILWIND</h2>
-                                <h2>JAVA</h2>
-                                <h2>C#</h2>
-                                <h2>SWIFT</h2>
-                                <h2>IOS</h2>
-                                <h2>ANDROID</h2>
+                                <h2 className={`${styles.html} animate__animated   animate__rubberBand`}>HTML</h2>
+                                <h2 className={`${styles.css} animate__animated   animate__rubberBand`}>CSS</h2>
+                                <h2 className={`${styles.js} animate__animated   animate__rubberBand`}>JAVASCRIPT</h2>
+                                <h2 className={`${styles.react} animate__animated   animate__rubberBand`}>REACTJS</h2>
+                                <h2 className={`${styles.next} animate__animated   animate__rubberBand`}>NEXTJS</h2>
+                                <h2  className={`${styles.node} animate__animated   animate__rubberBand`}>NODEJS</h2>
+                                <h2 className={`${styles.asp} animate__animated   animate__rubberBand`}>ASP.NET</h2>
+                                <h2 className={`${styles.sqls} animate__animated   animate__rubberBand`}>SQL SERVER</h2>
+                                <h2 className={`${styles.mysql} animate__animated   animate__rubberBand`}>MYSQL</h2>
+                                <h2 className={`${styles.mongo} animate__animated   animate__rubberBand`}>MONGODB</h2>
+                                <h2 className={`${styles.btp} animate__animated   animate__rubberBand`}>BOOSTRAP</h2>
+                                <h2 className={`${styles.tail} animate__animated   animate__rubberBand`}>TAILWIND</h2>
+                                <h2 className={`${styles.java} animate__animated   animate__rubberBand`}>JAVA</h2>
+                                <h2 className={`${styles.cs} animate__animated   animate__rubberBand`}>C#</h2>
+                                <h2  className={`${styles.swift} animate__animated   animate__rubberBand`}>SWIFT</h2>
+                                <h2 className={`${styles.ios} animate__animated   animate__rubberBand`}>IOS</h2>
+                                <h2 className={`${styles.android} animate__animated   animate__rubberBand`}>ANDROID</h2>
 
                         </div>
                 </div>

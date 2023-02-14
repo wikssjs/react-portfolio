@@ -3,7 +3,10 @@ import naruto from '../public/naruto.png'
 import styles from '../styles/Accueil.module.css'
 import Presentation from "./Presentation";
 import AproposContenu from './AproposContenu';
+import Projet1 from './Projet1';
+import Projet2 from './Projet2';
 import Education from "./Education";
+import ProjetFullPage from "./ProjetFullPage";
 import { useRef,useEffect,useState } from 'react'
 
 
@@ -13,7 +16,8 @@ import { useRef,useEffect,useState } from 'react'
  */
 export default function Accueil() {
     {/** Contenu de la page d'accueil */ }
-    return <main className={`${styles.container} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
+    return <>
+    <main className={`${styles.container} shadow-lg rounded-5 container-lg p-2 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
         <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
 
             <div className={`${styles.contenu} d-flex`}>
@@ -25,8 +29,8 @@ export default function Accueil() {
                 </div>
             </div>
         </div>
-        <AproposContenu/>
-        <Education/>
     </main>;
+    </>
+    
 }
 
