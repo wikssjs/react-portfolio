@@ -6,7 +6,6 @@
 .nom h1{
     font-weight: bold;
     animation-duration: 1.5s;
-
 }
 
 .nom i{
@@ -17,8 +16,8 @@
     animation-duration: 2s;
 
 }
-.image{
+.nom .image{
     width: 80px;
     height: 60px;
-
+    transform: rotate(45deg);
 }

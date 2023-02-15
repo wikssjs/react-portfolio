@@ -13,8 +13,12 @@ const montserrat = Montserrat({subsets:['latin']});
 const j = EB_Garamond({subsets:['latin']});
 
 export default function App({ Component, pageProps }) {
-  const [page,setPage] = useState('Contact')
+  const [dark,setDark] = useState(false)
 
+
+  const setDarkMode = ()=>{
+    setDark(dark)
+  }
   return  <>
 
   <style jsx global>
@@ -28,6 +32,12 @@ export default function App({ Component, pageProps }) {
       }
 
       body{
+        ${dark ?"background-color:#292b2c":`background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)`}
+    
+      }
+      .txt-type{
+        color:${dark?"white":"black"};
       }
       p {
         font-family : ${roboto.style.fontFamily}
@@ -45,8 +55,8 @@ export default function App({ Component, pageProps }) {
     
     `}
   </style>
-  <Layout setPage={setPage}>
-  <Component page = {page} {...pageProps} />
+  <Layout setDark={setDark} dark={dark}>
+  <Component {...pageProps} />
   </Layout>
   </>
 }

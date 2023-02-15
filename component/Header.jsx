@@ -6,9 +6,9 @@ import styles from '../styles/Header.module.css'
  * @param {setPage} param0 
  * @returns header avec le menu
  */
-export default function Header({setPage}) {
+export default function Header() {
     return <header className={styles.header}>
-        <Menu setPage={setPage}/>
+        <Menu />
     </header>
         ;
 }

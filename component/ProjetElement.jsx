@@ -25,6 +25,13 @@ const projet = [
   },
   {
     description: "un portfolio en ligne qui présente mes compétences et mes réalisations. Grâce à une interface utilisateur intuitive, les utilisateurs peuvent facilement naviguer à travers mes projets les plus récents et découvrir mes compétences en développement web. Avec ce portfolio en ligne, je peux mettre en valeur mes talents et mes expériences pour montrer ce que je peux faire."
+  },
+  {
+    description: `Une application de chat en temps réel en utilisant les technologies NodeJS, ExpressJS, SQLite, Tailwind et SSE. Cette application comprend trois salles de discussion pour les utilisateurs Java, HTML et C#.
+
+    J'ai ajouté une fonctionnalité de non-utilisateur pour permettre aux utilisateurs de participer sans créer de compte, et j'ai également mis en place un système de mot de passe sécurisé pour les utilisateurs enregistrés.
+    
+    Ce projet m'a permis de mettre en pratique mes compétences en développement web, tout en créant une solution pratique pour les personnes cherchant une solution de chat en temps réel.`
   }
 
 

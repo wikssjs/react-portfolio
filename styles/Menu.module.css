@@ -179,6 +179,7 @@
     .input:checked~nav .navbar_toggler .bar:nth-child(3) {
         transform: rotate(-45deg);
     }
+
 }
 
 @media (min-width:0) and (max-width:300px){

@@ -6,6 +6,7 @@
    height: 20vh;
    align-items: flex-end;
    position: fixed;
+   color: white;
 }
 
 @media (max-width:1281px){

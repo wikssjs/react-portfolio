@@ -2,6 +2,8 @@ html{
   box-sizing: border-box;
   overflow-x: hidden; 
   scroll-behavior: smooth;
+  position: relative;
+
 }
 
 *, * ::before, *::after{
@@ -9,13 +11,9 @@ html{
 }
 
 body{
-  background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color  : #fff;
-  position: relative;
-  background-color: #333;
 }
 
 a{
@@ -31,3 +29,53 @@ li{
 @media (max-width:500px){p{
   width: 50px;
  }}
+
+ .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: #21D4FD;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.bi-moon {
+  color: pink;
+}
+
+.bi-sun {
+  color: yellow;
+}
+
+.darkButton{
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+
+
