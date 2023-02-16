@@ -30,8 +30,9 @@ const projet = [
     description: `Une application de chat en temps réel en utilisant les technologies NodeJS, ExpressJS, SQLite, Tailwind et SSE. Cette application comprend trois salles de discussion pour les utilisateurs Java, HTML et C#.
 
     J'ai ajouté une fonctionnalité de non-utilisateur pour permettre aux utilisateurs de participer sans créer de compte, et j'ai également mis en place un système de mot de passe sécurisé pour les utilisateurs enregistrés.
-    
-    Ce projet m'a permis de mettre en pratique mes compétences en développement web, tout en créant une solution pratique pour les personnes cherchant une solution de chat en temps réel.`
+    `
+  },
+  {description:`Cette application permet aux utilisateurs de télécharger facilement des vidéos TikTok à partir de leur URL. J'ai utilisé ASP.NET pour créer une interface utilisateur simple et conviviale, et j'ai également mis en place un API pour communiquer avec les serveurs TikTok et extraire les vidéos souhaitées.`
   }
 
 

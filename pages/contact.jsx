@@ -10,8 +10,8 @@ export default function Contact() {
 
         </div>
         <div className={`${styles.contact_wrapper} d-flex flex-column align-items-center`}>
-            <form action="" className={`${styles.contact_form} d-flex flex-column`}>
-                <h2>Contact Me</h2>
+            <form  action="" className={`${styles.contact_form} d-flex flex-column`}>
+                <h2>Contactez Moi</h2>
                 <label>
                     Nom
                     <input type="text" required />

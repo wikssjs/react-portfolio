@@ -11,6 +11,7 @@
 }
 
 .contact_form{
+    z-index: 100;
     width: 60%;
     border-radius: 29px;
     background: #23272b;
@@ -18,7 +19,7 @@
     transition: all .5s ease-in-out;
     gap: 20px;
     padding: 40px;
-    z-index: 2;
+    z-index: 200;
 }
 
 .contact_form label{
@@ -59,13 +60,18 @@
     width: 200px;
     height: 50px;
     background: none;
-    color: white;
+    color: aqua;
     outline: none;
     border: none;
     background: #23272b;
     box-shadow: 5px 5px 10px #0e1011, -5px -5px 10px #383e45;
 }
+.contact_form button:hover{
+    opacity: 0.9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
 
+}
 .contact_form textarea{
     background: #23272b;
     border-radius: 6px;

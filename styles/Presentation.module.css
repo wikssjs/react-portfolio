@@ -22,7 +22,7 @@
   .description pre {
     display: flex;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: bolder;
   }
   
   .description p {

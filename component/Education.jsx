@@ -36,7 +36,7 @@ export default function Education(){
 
             <div className={styles.college_wrapper}>
                 <h2>DEC EN PROGRAMMATION</h2>
-                <span>College lacite (2002-2023)</span>
+                <span>College lacite (2022-2023)</span>
                 <div className='mt-4'>
 
                 <p>J'ai appris ces différentes technologies et langages de programmation au collège. J'ai suivi des cours en informatique qui m'ont permis de comprendre les bases de la programmation et de découvrir les différents langages de programmation.</p>

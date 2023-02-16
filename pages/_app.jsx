@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'animate.css';
 import { useState } from 'react';
-import {Roboto_Flex,Montserrat,EB_Garamond} from '@next/font/google'
+import {Roboto_Flex,Montserrat,EB_Garamond,Playfair_Display,Cormorant_Garamond} from '@next/font/google'
 import Layout from '../component/Layout';
 
 
 const roboto = Roboto_Flex({subsets:['latin']});
 const montserrat = Montserrat({subsets:['latin']});
-const j = EB_Garamond({subsets:['latin']});
+const playFair = Playfair_Display({subsets:['latin']});
+const garamond = Cormorant_Garamond({subsets:['latin'],weight:["400"]});
 
 export default function App({ Component, pageProps }) {
   const [dark,setDark] = useState(false)
@@ -27,8 +28,8 @@ export default function App({ Component, pageProps }) {
         // font-family : ${roboto.style.fontFamily};
       }
 
-      h1,h2,h3,h4,h5,h6,p {
-        font-family : ${j.style.fontFamily}
+      h1,h2,h3,h4,h5,h6,p,li,div {
+        font-family : ${playFair.style.fontFamily}
       }
 
       body{
@@ -40,7 +41,12 @@ export default function App({ Component, pageProps }) {
         color:${dark?"white":"black"};
       }
       p {
-        font-family : ${roboto.style.fontFamily}
+        font-family : ${garamond.style.fontFamily}
+        font-size:20px;
+      }
+
+      pre{
+        font-family : ${garamond.style.fontFamily}
       }
 
 

@@ -55,6 +55,7 @@ export default function AproposContenu() {
                                 <h2  className={`${styles.swift} animate__animated   animate__rubberBand`}>SWIFT</h2>
                                 <h2 className={`${styles.ios} animate__animated   animate__rubberBand`}>IOS</h2>
                                 <h2 className={`${styles.android} animate__animated   animate__rubberBand`}>ANDROID</h2>
+                                <h2 className={`${styles.git} animate__animated   animate__rubberBand`}>GIT</h2>
 
                         </div>
                 </div>

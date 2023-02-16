@@ -73,9 +73,21 @@ li{
 }
 
 .darkButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   bottom: 50px;
   left: 50px;
+  z-index: 100;
+  gap: 5px;
+}
+
+.darkButton h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color :white
 }
 
 
