@@ -13,6 +13,7 @@ export default function Layout({children,setPage,setDark,dark}) {
 
             <Header setPage={setPage}/>
             {children}
+            <img src="/css.png" alt="image" />
             
             <Contact_links />
             <div className="darkButton">

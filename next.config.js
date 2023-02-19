@@ -2,7 +2,7 @@
 export default {
   reactStrictMode: true,
   images :{
-    formats: ['image/webp'],
+    formats: ['image/avif'],
 
   }
 }
