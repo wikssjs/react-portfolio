@@ -12,9 +12,7 @@ export default function Layout({children,setPage,setDark,dark}) {
         <div className={`${styles.wrapper}`}>
 
             <Header setPage={setPage}/>
-            {children}
-            <img src="/css.png" alt="image" />
-            
+            {children}            
             <Contact_links />
             <div className="darkButton">
                 <h1>Dark Mode</h1>
