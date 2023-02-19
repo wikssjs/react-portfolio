@@ -157,6 +157,32 @@
   transform: translateY(2px);
 }
 
+@media screen and (min-width:1280px) and (max-height:700px) {
+  .popup_inner{
+    height: 90%;
+  }
+}
+
+@media screen and (min-width:1280px) and (max-height:550px) {
+  .popup_inner{
+    height: 120%;
+    top: 2%;
+  }
+  .popup{
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width:1280px) and (max-height:400px) {
+  .popup_inner{
+    height: 150%;
+    top: 2%;
+  }
+  .popup{
+    overflow-y: scroll;
+  }
+}
+
 @media screen and (max-width: 1280px) {
 
     .popup_inner{
