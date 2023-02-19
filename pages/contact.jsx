@@ -12,7 +12,7 @@ export default function Contact() {
         </div>
 
             <div className={`${styles.contact_wrapper} w-100 d-flex flex-column align-items-center`}>
-                <form name='contact' action="" data-netlify="true" onSubmit="submit" method='POST' className={`${styles.contact_form} d-flex flex-column`}>
+                <form data-netlify-honeypot="bot-field" name='contact' action="" data-netlify="true" onSubmit="submit" method='POST' className={`${styles.contact_form} d-flex flex-column`}>
                     <h2>Contactez-Moi</h2>
                     <label>
                         Nom
@@ -27,6 +27,7 @@ export default function Contact() {
                         Message
                         <textarea name="" id="" cols="30" rows="10" required></textarea>
                     </label>
+                    <input className='d-none' name='bot-field'/>
                     <button type='submit'>Envoyer <i className='bi bi-arrow-right'></i></button>
                 </form>
             </div>
