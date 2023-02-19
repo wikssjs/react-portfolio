@@ -16,7 +16,7 @@ export default function Popup({ closePopup, project, video, github, lien }) {
         <div className={`${styles.popup} animate__animated  ${addAnim ? 'animate__fadeOutDown' : 'animate__fadeInDown'}`}>
             <div className={styles.popup_inner}>
                 <button className={`${styles.button} `} onClick={() => { closePopup(); add() }}><i className='bi bi-x-lg'></i></button>
-                <video className={`${styles.image} bg-body`} src={video} autoPlay controls></video>
+                <video muted className={`${styles.image} bg-body`} src={video} autoPlay controls></video>
                 <div className={styles.contenu}>
                     <h1 className={styles.type}>{project.type}</h1>
                     <p className={styles.nom}>{project.nom}</p>

@@ -25,7 +25,7 @@ export default function Menu() {
     return <> <input checked={isChecked} className={styles.input} type="checkbox" name="" id="toggle" />
 
         {/**Menu  */}
-        <nav className={`${styles.menu} ${scrollY >180 ? styles.menu_sm: '' }`}>
+        <nav className={`${styles.menu}`}>
 
             
             <Nom_Logo/>

@@ -12,7 +12,7 @@
     box-shadow:  -7px -7px 14px #111315,
                  7px 7px 14px #353b41;
     transition: all .5s ease-in-out;
-    z-index: 1;
+    z-index: 2;
 }
 
 .projet_wrapper a{

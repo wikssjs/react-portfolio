@@ -1,3 +1,7 @@
+.container{
+    z-index: 2;
+}
+
 .container h1{
     font-size: 6em;
     font-weight: bold;
@@ -8,18 +12,23 @@
 
 .contact_wrapper{
     width: 100%;
+    z-index: 2;
+}
+
+.container .image{
+    width:400px;
+    height: 500px;
 }
 
 .contact_form{
-    z-index: 100;
-    width: 60%;
+    width: 76%;
     border-radius: 29px;
     background: #23272b;
     box-shadow: -7px -7px 14px #111315, 7px 7px 14px #353b41;
     transition: all .5s ease-in-out;
     gap: 20px;
     padding: 40px;
-    z-index: 200;
+    z-index: 2;
 }
 
 .contact_form label{
@@ -77,14 +86,14 @@
     border-radius: 6px;
     border: 2px solid #191b1e;
     box-shadow: 1px 4px 2px -3px rgba(0,0,0,.7) inset,-1px -3px 3px -2px hsla(0,0%,100%,.2) inset;;
-    font-size: 14px;
+    font-size: 1.2em;
     height: 55px;
     letter-spacing: 1px;
     color: #c4cfde;
     padding: 5px 15px;
     resize: none;
     padding: 10px 15px;
-    line-height: 18px;
+    line-height: 30px;
     min-height: 235px;
 }
 
@@ -106,7 +115,6 @@
 
    .container{
     margin-top: 12%;
-    background-color: yellow;
    }
 
    .contact_form{
@@ -119,10 +127,20 @@
 
     .container{
      margin-top: 20%;
-     background-color: violet;
     }
  
+    .container h1{
+        font-size: 3em;
+    }
     .contact_form{
-     width: 80%;
+     width: 100%;
+    }
+
+    .container iframe{
+        width: 100%;
+    }
+
+    .contact_form h2{
+        font-size: 2em;
     }
  }

@@ -39,7 +39,7 @@ export default function AproposContenu() {
                         <h1>Compétences</h1>
                         <div className='d-flex flex-wrap gap-3'>
                                 <h2 className={`${styles.html} animate__animated   animate__rubberBand`}>HTML</h2>
-                                <h2 className={`${styles.css} animate__animated   animate__rubberBand`}>CSS</h2>
+                                <h2 className={`${styles.css} animate__animated   animate__rubberBand d-flex flex-column align-items-center`}>CSS</h2>
                                 <h2 className={`${styles.js} animate__animated   animate__rubberBand`}>JAVASCRIPT</h2>
                                 <h2 className={`${styles.react} animate__animated   animate__rubberBand`}>REACTJS</h2>
                                 <h2 className={`${styles.next} animate__animated   animate__rubberBand`}>NEXTJS</h2>

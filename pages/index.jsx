@@ -8,6 +8,7 @@ import Projet2 from './web';
 import Education from "../component/Education";
 import ProjetFullPage from "../component/ProjetFullPage";
 import { useRef,useEffect,useState } from 'react'
+import Link from "next/link";
 
 
 /**
@@ -25,7 +26,11 @@ export default function Accueil() {
                 <Image src={naruto} alt='Mon photo' className={styles.image} />
                 <div className="d-flex flex-column align-items-center gap-5 align-items-baseline">
                     <Presentation />
-                    <button className="btn btn-lg border-primary shadow-lg">Telechager CV <i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
+                    <div className="d-flex gap-5 flex-md-row flex-column">
+
+                    <button className="btn btn-lg border-primary shadow-lg" id="download">Telechager CV <i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
+                    <Link href="/contact"><button className="btn btn-lg border-primary shadow-lg bg-none text-white d-flex gap-3">Embauche Moi <i className="bi bi-telephone animate__animated animate__bounceInDown"></i></button></Link>
+                    </div>
                 </div>
             </div>
         </div>

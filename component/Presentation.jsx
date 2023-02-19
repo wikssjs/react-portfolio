@@ -1,12 +1,15 @@
 import styles from '../styles/Presentation.module.css'
 import Typewriter from 'typewriter-effect';
+import {Roboto_Flex,Montserrat,EB_Garamond,Playfair_Display,Cormorant_Garamond} from '@next/font/google'
 
-
+const roboto = Roboto_Flex({subsets:['latin']});
 /**
  * prensentation de la page accueil
  * @returns ma presentation
  */
 export default function Presentation() {
+
+
     return <div className={styles.text}>
 
         <h1 className={`${styles.nom} text-shadow`}>James Bell</h1>
@@ -19,6 +22,7 @@ export default function Presentation() {
                         strings: ['Développeur Web', 'Développeur Android'],
                         autoStart: true,
                         loop: true,
+                        skipAddStyles:true
                     }}
                 /></pre>
 

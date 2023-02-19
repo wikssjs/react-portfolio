@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.wrapper button{
+.wrapper button[id="download"]{
     display: flex;
     gap: 20px;
     background-color: #21D4FD;

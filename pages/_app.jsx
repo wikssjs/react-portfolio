@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }) {
         // font-family : ${roboto.style.fontFamily};
       }
 
-      h1,h2,h3,h4,h5,h6,p,li,div {
+      h1,h2,h3,h4,h5,h6,p,li,div,.txt-type {
         font-family : ${playFair.style.fontFamily}
       }
 
@@ -39,6 +39,8 @@ export default function App({ Component, pageProps }) {
       }
       .txt-type{
         color:${dark?"white":"black"};
+        font-family : ${garamond.style.fontFamily};
+
       }
       p {
         font-family : ${garamond.style.fontFamily}
@@ -47,16 +49,13 @@ export default function App({ Component, pageProps }) {
 
       pre{
         font-family : ${garamond.style.fontFamily}
+        background-color:red
       }
 
 
       a{
         color: #fff;
         text-decoration :none
-      }
-      span{
-        font-family : ${roboto.style.fontFamily}
-
       }
     
     `}
