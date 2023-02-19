@@ -1,10 +1,11 @@
 import styles from '../styles/Contact.module.css'
-import ilus from '../public/contact_ilus.png'
-import Image from 'next/image'
+
 
 
 
 export default function Contact() {
+
+
     return <main className={`${styles.container}  d-flex flex-column align-items-center container gap-5 pb-5 shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft gap-5 mb-5 d-flex `}>
         <h1>Contact</h1>
         <div className='w-75 animate__animated animate__bounceInLeft'>
@@ -12,7 +13,7 @@ export default function Contact() {
         </div>
 
             <div className={`${styles.contact_wrapper} w-100 d-flex flex-column align-items-center`}>
-                <form data-netlify-honeypot="bot-field" name='contact' action="" data-netlify="true" onSubmit="submit" method='POST' className={`${styles.contact_form} d-flex flex-column`}>
+                <form target='_blank' action="https://formspree.io/f/mlekbgol" method='POST' className={`${styles.contact_form} d-flex flex-column`}>
                     <h2>Contactez-Moi</h2>
                     <label>
                         Nom
@@ -25,7 +26,7 @@ export default function Contact() {
                     </label>
                     <label htmlFor="">
                         Message
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
                     </label>
                     <input className='d-none' name='bot-field'/>
                     <button type='submit'>Envoyer <i className='bi bi-arrow-right'></i></button>
