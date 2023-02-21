@@ -2,11 +2,7 @@ import Image from "next/image";
 import naruto from '../public/naruto.png'
 import styles from '../styles/Accueil.module.css'
 import Presentation from "../component/Presentation";
-import AproposContenu from '../component/AproposContenu';
-import Projet1 from './android';
-import Projet2 from './web';
-import Education from "../component/Education";
-import ProjetFullPage from "../component/ProjetFullPage";
+
 import { useRef,useEffect,useState } from 'react'
 import Link from "next/link";
 
@@ -29,7 +25,7 @@ export default function Accueil() {
                     <div className="d-flex gap-5 flex-md-row flex-column">
 
                     <button className="btn btn-lg border-primary shadow-lg" id="download">Telechager CV <i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
-                    <Link href="/contact"><button className="btn btn-lg border-primary shadow-lg bg-none text-white d-flex gap-3">Embauche Moi <i className="bi bi-telephone animate__animated animate__bounceInDown"></i></button></Link>
+                    <Link href="/contact"><button className="btn btn-lg border-primary shadow-lg bg-none text-white d-flex gap-3">Contactez-Moi <i className="bi bi-telephone animate__animated animate__bounceInDown"></i></button></Link>
                     </div>
                 </div>
             </div>
