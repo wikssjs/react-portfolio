@@ -2,7 +2,7 @@ import Image from "next/image";
 import naruto from '../public/naruto.png'
 import styles from '../styles/Accueil.module.css'
 import Presentation from "../component/Presentation";
-
+import home from '../public/home.png'
 import { useRef,useEffect,useState } from 'react'
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ export default function Accueil() {
 
             <div className={`${styles.contenu} d-flex`}>
 
-                <Image src={naruto} alt='Mon photo' className={styles.image} />
+                <Image src={home} alt='Mon photo' className={styles.image} />
                 <div className="d-flex flex-column align-items-center gap-5 align-items-baseline">
                     <Presentation />
                     <div className="d-flex gap-5 flex-md-row flex-column">
