@@ -29,10 +29,10 @@
 @media (max-width:1281px){
 
     .container{
-        margin-top: 12%;
         align-items: center;
         justify-content: center;
         margin-left: 5px;
+        margin: auto;
     }
     .contenu{
         flex-direction: column;
@@ -54,7 +54,7 @@
 
     .container{
         width: 100%;
-     margin-top: 20%;
+     margin-top: 1%;
     }
  
  }

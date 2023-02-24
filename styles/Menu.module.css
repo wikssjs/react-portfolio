@@ -1,11 +1,12 @@
 .menu {
     display: flex;
     width: 100%;
-    gap: 26vw;
+    gap: 300px;
     padding: 20px;
     align-items: center;
     font-size: 1.5em;
     z-index: 200;
+    justify-content: space-between;
 }
 
 .menu_sm{
@@ -123,6 +124,7 @@
         justify-content: space-between;
         /* position: fixed; */
         top: 0;
+        gap: 0;
     }
 
     .liste {
