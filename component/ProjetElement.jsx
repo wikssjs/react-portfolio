@@ -36,7 +36,7 @@ const projet = [
     description: `Cette application permet aux utilisateurs de télécharger facilement des vidéos TikTok à partir de leur URL. J'ai utilisé ASP.NET pour créer une interface utilisateur simple et conviviale, et j'ai également mis en place un API pour communiquer avec les serveurs TikTok et extraire les vidéos souhaitées.`
   },
   {
-    description: `Ce site web a été créé pour offrir une expérience immersive de la culture, de la gastronomie et du tourisme d'Haïti. Vous y trouverez des informations sur les destinations touristiques populaires, les plats traditionnels haïtiens, les événements culturels et les activités touristiques incontournables. Avec une interface utilisateur conviviale et une navigation facile, ce site web est la ressource idéale pour explorer et découvrir tout ce que Haïti a à offrir.`
+    description: `Ce site web offre une expérience immersive de la culture, de la gastronomie et du tourisme d'Haïti. Vous y trouverez des informations sur les destinations touristiques populaires, les plats traditionnels haïtiens, les événements culturels et les activités touristiques incontournables. Explorez et découvrez tout ce que Haïti a à offrir grâce à cette ressource conviviale.`
   }
 
 

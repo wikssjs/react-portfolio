@@ -5,6 +5,7 @@ import Presentation from "../component/Presentation";
 import home from '../public/home.png'
 import { useRef,useEffect,useState } from 'react'
 import Link from "next/link";
+import  Head  from "next/head";
 
 
 /**
@@ -14,8 +15,16 @@ import Link from "next/link";
 export default function Accueil() {
     {/** Contenu de la page d'accueil */ }
     return <>
-    <main className={`${styles.container}  rounded-5 container-lg p-2 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
-        <div className={`${styles.wrapper} shadow-lg rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
+    <Head>
+        <title>JamesBell - Accueil</title>
+        <meta name="description" content="Page d'accueil de mon portfolio" />
+        <meta property="og:title" content="JamesBell - Accueil"/>
+        <meta property="og:description" content="Page d'accueil de mon portfolio"/>
+        <meta property="og:image" content="https://jamesbell.vercel.app/james.png"/>
+        
+    </Head>
+    <main className={`${styles.container} shadow-lg  rounded-5 container-lg p-2 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
+        <div className={`${styles.wrapper}  rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}>
 
             <div className={`${styles.contenu} d-flex`}>
 

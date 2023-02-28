@@ -10,7 +10,7 @@ const roboto = Roboto_Flex({subsets:['latin']});
 export default function Presentation() {
 
 
-    return <div className={styles.text}>
+    return <div className={`${styles.text} d-flex flex-column gap-`}>
 
         <h1 className={`${styles.nom} text-shadow`}>James Bell</h1>
 

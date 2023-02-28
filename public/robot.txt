@@ -1,0 +1,5 @@
+# Allow all crawlers 
+user-agent: *
+Allow: /
+
+Sitemap: https://www.jamesbell.vercel.app/sitemap.xml

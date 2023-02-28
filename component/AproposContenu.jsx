@@ -44,6 +44,7 @@ export default function AproposContenu() {
                                 <h2 className={`${styles.react} animate__animated   animate__rubberBand`}>REACTJS</h2>
                                 <h2 className={`${styles.next} animate__animated   animate__rubberBand`}>NEXTJS</h2>
                                 <h2  className={`${styles.node} animate__animated   animate__rubberBand`}>NODEJS</h2>
+                                <h2  className={`${styles.node} animate__animated   animate__rubberBand`}>ExpressJs</h2>
                                 <h2 className={`${styles.asp} animate__animated   animate__rubberBand`}>ASP.NET</h2>
                                 <h2 className={`${styles.sqls} animate__animated   animate__rubberBand`}>SQL SERVER</h2>
                                 <h2 className={`${styles.mysql} animate__animated   animate__rubberBand`}>MYSQL</h2>
