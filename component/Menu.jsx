@@ -43,6 +43,8 @@ export default function Menu() {
                 <li onClick={changeCheck} className={`${styles.about} animate__animated animate__bounceInDown`}> <Link href="/apropos"> <i className='bi bi-person'></i> Apropos</Link></li>
 
                 {/**DropDown */}
+                <li>
+
                 <div className={`${styles.dropdown} animate__animated animate__bounceInDown `}>
                     <a href="#" className={styles.dropdown_button}><i className='bi bi-briefcase'></i> Projets<i className='bi bi-arrow-down-short'></i> </a>
                     <ul className={styles.dropdown_content}>
@@ -50,6 +52,7 @@ export default function Menu() {
                         <li onClick={changeCheck}><Link href="/web"><i className='bi bi-globe'></i> Web</Link></li>
                     </ul>
                 </div>
+                </li>
 
 
                 <li onClick={changeCheck} className={`${styles.contact} animate__animated animate__bounceInDown`}><Link href="/contact"><i className='bi bi-envelope-open'></i>  Contact</Link></li>

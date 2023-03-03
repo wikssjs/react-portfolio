@@ -16,7 +16,8 @@ export default function Layout({children,setPage,setDark,dark}) {
             <Contact_links />
             <div className="darkButton">
                 <h1>Dark Mode</h1>
-                <input type="checkbox" className="checkbox" name="" id="checkbox" onChange={()=>{setDark(!dark)}}/>
+
+                <input type="checkbox" className="checkbox d-none" name="" id="checkbox" onChange={()=>{setDark(!dark)}}/>
                 <label htmlFor="checkbox" className="label">
                 <i className="bi bi-moon"></i>
                 <i className="bi bi-sun"></i>

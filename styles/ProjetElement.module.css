@@ -98,10 +98,10 @@
 .programming{
     display: flex;
     flex-wrap: wrap;
-    background-color: #3c4fe0;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     border-radius: 5px;
+    background-color: #3c4fe0;
 }
 .programming span{
     border-radius: 2px;
