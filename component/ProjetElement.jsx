@@ -30,7 +30,8 @@ const projet = [
     description: `Une application de chat en temps réel en utilisant les technologies NodeJS, ExpressJS, SQLite, Tailwind et SSE. Cette application comprend trois salles de discussion pour les utilisateurs Java, HTML et C#.
 
     J'ai ajouté une fonctionnalité de non-utilisateur pour permettre aux utilisateurs de participer sans créer de compte, et j'ai également mis en place un système de mot de passe sécurisé pour les utilisateurs enregistrés.
-    `
+    `,
+    warning: "L'application peut prendre du temps à charger"
   },
   {
     description: `Cette application permet aux utilisateurs de télécharger facilement des vidéos TikTok à partir de leur URL. J'ai utilisé ASP.NET pour créer une interface utilisateur simple et conviviale, et j'ai également mis en place un API pour communiquer avec les serveurs TikTok et extraire les vidéos souhaitées.`
@@ -80,7 +81,7 @@ export default function ProjetElement({ image, type, nom, anim, id, video, githu
     {isOpen && (
       <Popup
         closePopup={togglePopup}
-        project={{ image: image, type: type, nom: nom, description: projet[id].description }}
+        project={{ image: image, type: type, nom: nom, description: projet[id].description,warning: id ? projet[id].warning : null}}
         video={video}
         github={github}
         lien={lien}

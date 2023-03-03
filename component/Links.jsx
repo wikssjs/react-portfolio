@@ -9,12 +9,10 @@ export default function Links() {
     return <>
 
         {/**Social media links  */}
-        
+
         <ul className={styles.liste}>
             <li> <p>Suivez moi</p></li>
-            <li>
-
-            <span></span>
+            <li className={styles.bar}>
             </li>
             <li><a aria-label='Mon github' target="_blank" rel="noreferrer" href="https://github.com/wikssjs"><i className="bi bi-github"></i></a></li>
             <li><a aria-label='Mon Linkedin' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/james-bell-199ba9222/"><i className="bi bi-linkedin"></i></a></li>
