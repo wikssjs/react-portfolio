@@ -44,7 +44,7 @@ const projet = [
 
 ]
 
-export default function ProjetElement({ image, type, nom, anim, id, video, github, lien, languages }) {
+export default function ProjetElement({ image, type, nom, anim, id, video, github, lien, languages,visible }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -85,6 +85,7 @@ export default function ProjetElement({ image, type, nom, anim, id, video, githu
         video={video}
         github={github}
         lien={lien}
+        visible={visible}
       />
     )}
   </>

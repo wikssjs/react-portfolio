@@ -33,7 +33,7 @@ export default function Accueil() {
                     <Presentation />
                     <div className="d-flex gap-5 flex-md-row flex-column">
 
-                    <button className="btn btn-lg border-primary shadow-lg" id="download">Telechager CV <i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
+                    <button className="btn btn-lg border-primary shadow-lg" id="download"><a download href="/JamesBell.pdf" >Telecharger CV</a><i className="bi bi-download animate__animated animate__bounceInDown"></i></button>
                     <Link href="/contact"><button className="btn btn-lg border-primary shadow-lg bg-none text-white d-flex gap-3">Contactez-Moi <i className="bi bi-telephone animate__animated animate__bounceInDown"></i></button></Link>
                     </div>
                 </div>

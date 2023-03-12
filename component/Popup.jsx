@@ -6,7 +6,7 @@ import { useState } from 'react';
  * @param {closePopup,project,video,github,lien} param0 
  * @returns un popup avec les infos du projet clické
  */
-export default function Popup({ closePopup, project, video, github, lien,warning }) {
+export default function Popup({ closePopup, project, video, github, lien,visible }) {
     const [addAnim, setAddAnim] = useState(false);
     const add = () => {
         setAddAnim(!addAnim);
@@ -23,7 +23,7 @@ export default function Popup({ closePopup, project, video, github, lien,warning
                     <p className={styles.description}>{project.description}<span className='text-danger'>{project.warning}</span>
                     </p>
                     <div className={styles.link_buttons}>
-                        <a href={lien} target="_blank" className={styles.link} rel="noreferrer">Go to   <i className="bi bi-link"></i></a>
+                        <a href={lien} target="_blank" className={`${styles.link}`} style={{visibility:`${visible}`}} rel="noreferrer">Go to  {visible} <i className="bi bi-link"></i></a>
                         <a href={github} target="_blank" className={styles.github} rel="noreferrer"> GitHub   <i className='bi bi-box-arrow-in-right'></i></a>
                     </div>
                 </div>
