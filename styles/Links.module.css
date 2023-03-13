@@ -41,4 +41,8 @@
         font-size: 1.3em;
         margin-right: 30px;
      }
+
+     .liste .bar{
+        display: none;
+     }
     }

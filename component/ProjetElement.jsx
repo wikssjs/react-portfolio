@@ -44,7 +44,7 @@ const projet = [
 
 ]
 
-export default function ProjetElement({ image, type, nom, anim, id, video, github, lien, languages,visible }) {
+export default function ProjetElement({ image, type, nom, id, video, github, lien, languages,visible }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -59,7 +59,7 @@ export default function ProjetElement({ image, type, nom, anim, id, video, githu
   };
 
   return (<>
-    <div className={`${styles.projet_wrapper} col-1 ${anim}`}>
+    <div className={`${styles.projet_wrapper} col-1`}>
       <a href="#" onClick={togglePopup}>
         <div className={styles.image_wrapper}>
           <Image sizes="min-width:800px" src={image} className={styles.image} alt={nom} />
