@@ -31,6 +31,11 @@
     z-index: 2;
 }
 
+.contact_form .erreur{
+    color:#ff014f ;
+    font-weight: bold;
+}
+
 .contact_form label{
     display: flex;
     flex-direction: column;
