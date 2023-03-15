@@ -4,7 +4,10 @@ import { useState } from 'react'
 
 
 
-
+/**
+ * 
+ * @returns Page contact
+ */
 export default function Contact() {
     const [courriel, setCourriel] = useState('');
     const handleCourrielChange = (event) => setCourriel(event.target.value);
@@ -82,6 +85,7 @@ export default function Contact() {
             <meta property="og:image" content="https://jamesbell.vercel.app/james.png" />
 
         </Head>
+
         <main className={`${styles.container}  d-flex flex-column align-items-center container gap-5 pb-5 shadow-lg rounded-5 container-lg p-3  gap-5 mb-5 d-flex `}>
             <h1>Contact</h1>
             <div className='w-75  animate__animated animate__bounceInLeft'>

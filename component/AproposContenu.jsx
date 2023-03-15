@@ -2,6 +2,11 @@ import styles from '../styles/Apropos.module.css'
 import { useRef,useEffect,useState } from 'react'
 
 
+
+/**
+ * composant AproposContenu
+ * @returns contenu du composant Apropos
+ */
 export default function AproposContenu() {
         const divRef = useRef(null);
         const [divPos, setDivPos] = useState(0);

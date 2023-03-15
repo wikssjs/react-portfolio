@@ -6,7 +6,10 @@ import { useRef,useEffect,useState } from 'react'
 
 
 
-
+/**
+ * fonction qui retourne le composant education
+ * @returns the page education
+ */
 export default function Education(){
     const divRef = useRef(null);
 

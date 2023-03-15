@@ -9,7 +9,7 @@ import tiktok_logo from '../public/tiktok_logo.jpg'
 import haiti from '../public/haiti.png'
 import message from '../public/message.png'
 import chat from '../public/chat.png'
-
+import bug from '../public/bug.png'
 
 /**
  * ma page de projet web
@@ -25,6 +25,7 @@ export default function Projet2() {
       <meta property="og:image" content="https://jamesbell.vercel.app/james.png" />
     </Head>
     <ProjetGrid titre="Website" icon="bi bi-globe">
+        <ProjetElement id={9} image={bug} type="Web development" nom="Bug Tracker" video = "/videos/quiz.mp4" github="https://github.com/wikssjs/Bug-Tracker" lien="https://james-bug-tracker.vercel.app" languages ={["SQLITE -","EXPRESS -","REACTJS -","NODEJS"]}/>
         <ProjetElement id={6} image={chat} type="Web development" nom="Real Time Chat Room"  video = "/videos/message.mp4" github="https://github.com/wikssjs/messaging_app" lien="https://message-xz6i.onrender.com" languages ={["NODEJS -","EXPRESS -","TAILWIND -","CSS -","SQLITE"]}/>
         <ProjetElement id={7} image={tiktok_logo} type="Web development" nom="Tiktok Downloader"  video = "/videos/tiktok.mp4" github="https://github.com/wikssjs/TiktokDownloader" lien="https://jamesdowntik.azurewebsites.net" languages ={["C# -","ASP.NET -","BOOSTRAP","API"]}/>
         <ProjetElement id={8} image={haiti} type="Web development" nom="Haiti"  video = "/videos/haiti.mp4" github="https://github.com/wikssjs/james" lien="https://haiti.vercel.app" languages ={["React -","BOOTSTRAP -","CSS"]}/>

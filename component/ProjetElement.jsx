@@ -38,8 +38,10 @@ const projet = [
   },
   {
     description: `Ce site web offre une expérience immersive de la culture, de la gastronomie et du tourisme d'Haïti. Vous y trouverez des informations sur les destinations touristiques populaires, les plats traditionnels haïtiens, les événements culturels et les activités touristiques incontournables. Explorez et découvrez tout ce que Haïti a à offrir grâce à cette ressource conviviale.`
+  },
+  {
+    description: 'un bug tracker encore en developpement qui permet de suivre les bugs et les taches d\'un projet en utilisant les technologies ReactJS, NodeJS, ExpressJS, SQLITE. Cette application permet aux utilisateurs de créer des projets, de créer des taches et de les assigner à des utilisateurs.'
   }
-
 
 
 ]
