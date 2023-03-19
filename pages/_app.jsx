@@ -1,29 +1,30 @@
-import 'normalize.css/normalize.css'
-import '../styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import 'animate.css';
-import { useState } from 'react';
-import {Roboto_Flex,Montserrat,EB_Garamond,Playfair_Display,Cormorant_Garamond} from '@next/font/google'
-import Layout from '../component/Layout';
+import "normalize.css/normalize.css";
+import "../styles/globals.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "animate.css";
+import { useState } from "react";
+import {
+  Roboto_Flex,
+  Playfair_Display,
+  Cormorant_Garamond,
+} from "@next/font/google";
+import Layout from "../component/Layout";
 
-
-const roboto = Roboto_Flex({subsets:['latin']});
-const montserrat = Montserrat({subsets:['latin']});
-const playFair = Playfair_Display({subsets:['latin']});
-const garamond = Cormorant_Garamond({subsets:['latin'],weight:["400"]});
+const roboto = Roboto_Flex({ subsets: ["latin"] });
+const playFair = Playfair_Display({ subsets: ["latin"] });
+const garamond = Cormorant_Garamond({ subsets: ["latin"], weight: ["400"] });
 
 export default function App({ Component, pageProps }) {
-  const [dark,setDark] = useState(false)
+  const [dark, setDark] = useState(false);
 
-
-  const setDarkMode = ()=>{
-    setDark(dark)
-  }
-  return  <>
-
-  <style jsx global>
-    {`
+  const setDarkMode = () => {
+    setDark(dark);
+  };
+  return (
+    <>
+      <style jsx global>
+        {`
       html {
         // font-family : ${roboto.style.fontFamily};
       }
@@ -33,12 +34,16 @@ export default function App({ Component, pageProps }) {
       }
 
       body{
-        ${dark ?"background-color:#292b2c":`background-color: #21D4FD;
-        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)`}
+        ${
+          dark
+            ? "background-color:#292b2c"
+            : `background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)`
+        }
     
       }
       .txt-type{
-        color:${dark?"white":"black"};
+        color:${dark ? "white" : "black"};
         font-family : ${garamond.style.fontFamily};
 
       }
@@ -59,9 +64,10 @@ export default function App({ Component, pageProps }) {
       }
     
     `}
-  </style>
-  <Layout setDark={setDark} dark={dark}>
-  <Component {...pageProps} />
-  </Layout>
-  </>
+      </style>
+      <Layout setDark={setDark} dark={dark}>
+        <Component {...pageProps} />
+      </Layout>
+    </>
+  );
 }

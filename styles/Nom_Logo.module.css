@@ -1,22 +1,21 @@
-.nom{
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
+.nom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.nom h1{
-    font-weight: bold;
-    animation-duration: 1.5s;
+.nom h1 {
+  font-weight: bold;
+  animation-duration: 1.5s;
 }
 
-.nom i{
-    margin-left: 10px;
-    margin-bottom: 14px;
-    font-size: .5em;
-    color: #21D4FD;
-    animation-duration: 2s;
-
+.nom i {
+  margin-left: 10px;
+  margin-bottom: 14px;
+  font-size: 0.5em;
+  color: #21d4fd;
+  animation-duration: 2s;
 }
-.nom .image{
-    width: 100px;
-    height: auto;
+.nom .image {
+  width: 100px;
+  height: auto;
 }

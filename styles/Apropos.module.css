@@ -14,18 +14,17 @@
   font-weight: bold;
   color: seashell;
   animation: neon 1s linear infinite alternate;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21d4fd, 0 0 25px #21d4fd;
 }
-
-
 
 @keyframes neon {
   0% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21d4fd, 0 0 25px #21d4fd;
   }
 
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21D4FD, 0 0 25px #21D4FD, 0 0 30px #21D4FD;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #21d4fd, 0 0 25px #21d4fd,
+      0 0 30px #21d4fd;
   }
 }
 
@@ -41,7 +40,6 @@
   font-weight: 900;
   color: wheat;
   padding: 8px;
-
 }
 
 .contenu {
@@ -56,7 +54,6 @@
   font-size: 1.2em;
   font-weight: 100;
 }
-
 
 .image {
   width: 40%;
@@ -73,9 +70,7 @@
   height: 200px;
 }
 
-@media (max-width:1281px) {
-
-
+@media (max-width: 1281px) {
   .apropos_wrapper {
     flex-direction: column;
     align-items: baseline;
@@ -92,15 +87,13 @@
   .apropos_wrapper h1 {
     font-size: 3.5em;
   }
-  .main{
+  .main {
     margin-top: 12%;
   }
-  
 }
 
-@media (max-width:600px){
-
-  .main{
+@media (max-width: 600px) {
+  .main {
     margin-top: 20%;
   }
 }
@@ -130,7 +123,7 @@
 }
 
 .asp {
-  animation-duration: 2s
+  animation-duration: 2s;
 }
 
 .sqls {
@@ -173,6 +166,6 @@
   animation-duration: 2s;
 }
 
-.git{
+.git {
   animation-duration: 2s;
 }

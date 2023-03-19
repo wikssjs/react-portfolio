@@ -1,22 +1,41 @@
-import styles from '../styles/Links.module.css'
-
+import styles from "../styles/Links.module.css";
 
 /**
  * liens de mes reseaux sociaux
  * @returns mes socials media links
  */
 export default function Links() {
-    return <>
+  return (
+    <>
+      {/**Social media links  */}
 
-        {/**Social media links  */}
-
-        <ul className={styles.liste}>
-            <li> <p>Suivez moi</p></li>
-            <li className={styles.bar}>
-            </li>
-            <li><a aria-label='Mon github' target="_blank" rel="noreferrer" href="https://github.com/wikssjs"><i className="bi bi-github"></i></a></li>
-            <li><a aria-label='Mon Linkedin' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/james-bell-199ba9222/"><i className="bi bi-linkedin"></i></a></li>
-        </ul>
-
+      <ul className={styles.liste}>
+        <li>
+          {" "}
+          <p>Suivez moi</p>
+        </li>
+        <li className={styles.bar}></li>
+        <li>
+          <a
+            aria-label="Mon github"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/wikssjs"
+          >
+            <i className="bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            aria-label="Mon Linkedin"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/james-bell-199ba9222/"
+          >
+            <i className="bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
     </>
+  );
 }
