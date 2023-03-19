@@ -22,5 +22,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typewriter-effect": "^2.19.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "next-purgecss": "^4.0.0"
   }
 }

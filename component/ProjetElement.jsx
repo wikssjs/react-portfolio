@@ -79,10 +79,12 @@ export default function ProjetElement({
         <a href="#" onClick={togglePopup}>
           <div className={styles.image_wrapper}>
             <Image
-              sizes="min-width:800px"
               src={image}
               className={styles.image}
               alt={nom}
+              priority
+              loading="eager"
+              width={800}
             />
           </div>
           <div className={styles.contenu}>
