@@ -1,5 +1,6 @@
 .container {
   z-index: 2;
+
 }
 
 .image {
@@ -39,7 +40,7 @@
   }
   .contenu {
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 5%;
     align-items: center;
   }
   .image {

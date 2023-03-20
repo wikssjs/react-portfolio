@@ -32,7 +32,7 @@ export default function Accueil() {
         className={`${styles.container} shadow-lg  rounded-5 container-lg p-2 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}
       >
         <div
-          className={`${styles.wrapper}  rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}
+          className={`${styles.wrapper} rounded-5 container-lg p-3 animate__animated animate__bounceInLeft d-flex flex-column gap-5`}
         >
           <div className={`${styles.contenu} d-flex`}>
             <Image

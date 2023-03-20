@@ -22,7 +22,8 @@ export default function Contact() {
       return true;
     }
   };
-
+  
+  
   const [nom, setNom] = useState("");
   const [erreurNom, setErreurNom] = useState("");
   const handleNomChange = (event) => setNom(event.target.value);
@@ -48,7 +49,7 @@ export default function Contact() {
       return true;
     }
   };
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -61,7 +62,7 @@ export default function Contact() {
       event.currentTarget.method = "POST";
       event.currentTarget.submit();
     }
-  };
+};
 
   return (
     <>
