@@ -46,7 +46,7 @@ const projet = [
   },
   {
     description:
-      "un bug tracker encore en developpement qui permet de suivre les bugs et les taches d'un projet en utilisant les technologies ReactJS, NodeJS, ExpressJS, SQLITE. Cette application permet aux utilisateurs de créer des projets, de créer des taches et de les assigner à des utilisateurs.",
+      "un bug tracker  qui permet de suivre les bugs et les taches d'un projet en utilisant les technologies ReactJS, NodeJS, ExpressJS, SQLITE. Cette application permet aux utilisateurs de créer des projets, de créer des taches et de les assigner à des utilisateurs.",
   },
 ];
 

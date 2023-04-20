@@ -39,7 +39,7 @@ export default function Projet2() {
           image={bug}
           type="Web development"
           nom="Bug Tracker"
-          video="/videos/quiz.mp4"
+          video="/videos/bug.mp4"
           github="https://github.com/wikssjs/Bug-Tracker"
           lien="https://james-bug-tracker.vercel.app"
           languages={["SQLITE -", "EXPRESS -", "REACTJS -", "NODEJS"]}
