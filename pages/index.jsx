@@ -4,6 +4,7 @@ import Presentation from "../component/Presentation";
 import home from "../public/home.png";
 import Link from "next/link";
 import Head from "next/head";
+import { FormattedMessage } from "react-intl";
 
 /**
  * ma page d'accueil
@@ -51,13 +52,13 @@ export default function Accueil() {
                   id="download"
                 >
                   <a download href="/JamesBell.pdf">
-                    Telecharger CV
+                    <FormattedMessage id="app.content.home.cv"/>
                   </a>
                   <i className="bi bi-download animate__animated animate__bounceInDown"></i>
                 </button>
                 <Link href="/contact">
                   <button className="btn btn-lg border-primary shadow-lg bg-none text-white d-flex gap-3">
-                    Contactez-Moi{" "}
+                  <FormattedMessage id="app.content.home.contact"/>
                     <i className="bi bi-telephone animate__animated animate__bounceInDown"></i>
                   </button>
                 </Link>

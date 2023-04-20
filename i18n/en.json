@@ -1,0 +1,43 @@
+{
+  "app.menu.home": "Home",
+  "app.menu.about": "About",
+  "app.menu.contact": "Contact",
+  "app.menu.project": "Projects",
+  "app.menu.project.web": "Web",
+  "app.menu.project.android": "Android",
+  "app.content.home.iam": "I Am A",
+  "app.content.home.type1": "Web Developer",
+  "app.content.home.type2": "Android Developer",
+  "app.content.home.text": "I am a skilled developer in CSS, HTML, JavaScript, and frameworks. I strive to create high-performing applications and websites by learning new tools and improving myself.",
+  "app.content.home.cv": "Download CV",
+  "app.content.home.contact": "Contact me",
+  "app.content.home.side.follow": "Follow me",
+
+  "app.content.about.about": "About",
+  "app.content.about.about.text1": "Welcome to my online portfolio! I am a passionate and talented web and Android developer, proud of my skills and accomplishments. Through my studies and personal projects, I have honed my skills in web and Android development and am ready to use them to add value to any project I work on.",
+  "app.content.about.about.text2": "I am a determined and creative worker, able to design and develop high-performing and aesthetically pleasing web and Android applications. I am also able to work as part of a team, which is a valuable asset for any software development project.",
+  "app.content.about.about.text3": "On this site, you will find an overview of my skills, projects, and journey. I hope you take the time to browse through my portfolio and discover how I can add value to your software development projects. Please don't hesitate to contact me if you have any questions or would like to learn more about my skills and experience.",
+
+  "app.content.about.skills": "Skills",
+  "app.content.about.education.subtitle": "DEC IN PROGRAMMING",
+  "app.content.about.education.college": "La Cité College (2022-2023)",
+  "app.content.about.education.text1": "I learned these different technologies and programming languages in college. I took computer courses that taught me the basics of programming and introduced me to different programming languages.",
+  "app.content.about.education.text2": "Over the years, I worked hard to improve my computer programming skills and participated in many projects that allowed me to put into practice what I learned in class.",
+  "app.content.about.education.text3": "I am grateful to my college for giving me the knowledge and tools necessary to succeed in this exciting field of computer programming. I am confident that these skills will be useful to me in the future, and I am ready to continue learning and developing my programming skills.",
+
+  "app.content.project.android.ecommerce": "This Android application developed in Java uses a RapidAPI to offer features such as data search, real-time visualization, PayPal and credit card payments, and shopping cart management. Users can add items, view their cart, and easily complete their purchase. The application is easy to use and designed for an efficient and intuitive experience.",
+  "app.content.project.android.blackjack": "A Blackjack application with Android Studio and Java. This application allows users to play Blackjack using standard game rules. Features include the ability to place bets, draw cards, stay, double or split. The application is designed to be realistic and fun, adhering to standard Blackjack rules.",
+  "app.content.project.android.todo": "A todo application",
+
+  "app.content.project.web.bug": "A bug tracker still in development that allows tracking bugs and tasks of a project using ReactJS, NodeJS, ExpressJS, SQLITE technologies.This application allows users to create projects, create tasks, and assign them to users.",
+  "app.content.project.web.chat": "A real-time chat application using NodeJS, ExpressJS, SQLite, Tailwind, and SSE technologies. This application includes three chat rooms for Java, HTML, and C# users. I added a non-user feature to allow users to participate without creating an account, and I also implemented a secure password system for registered users.",
+  "app.content.project.web.chat.warning": "The application may take time to load",
+  "app.content.project.web.tiktok": "This application allows users to easily download TikTok videos from their URL. I used ASP.NET to create a simple and user-friendly interface, and I also set up an API to communicate with TikTok servers and extract the desired videos.",
+  "app.content.project.web.haiti": "This website offers an immersive experience of Haiti's culture, cuisine, and tourism. You will find information on popular tourist destinations, traditional Haitian dishes, cultural events, and must-do tourist activities. Explore and discover all that Haiti has to offer through this user-friendly resource.",
+  "app.content.project.web.weather": "A weather application that uses an API to provide real-time information on weather conditions. Features include the ability to search for weather information by city or geolocation, view short and long-term forecasts, view data on temperature, atmospheric pressure, humidity, winds, and precipitation. The application is designed to be easy to use and understand for users.",
+  "app.content.project.web.quiz": "A quiz application that generates 20 random questions using an API. This application allows users to test their knowledge in various domains by answering random questions generated by the API. Features include the ability to answer questions within a limited time, receive results at the end of the quiz, with a score in points earned, and view the remaining time to finish the quiz. The application uses an intuitive user interface for an enjoyable gaming experience.",
+
+  "app.content.contact.form.title": "Contact Me",
+  "app.content.contact.form.name": "Name",
+  "app.content.contact.form.submit": "Send"
+}

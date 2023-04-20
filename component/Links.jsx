@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import styles from "../styles/Links.module.css";
 
 /**
@@ -12,7 +13,7 @@ export default function Links() {
       <ul className={styles.liste}>
         <li>
           {" "}
-          <p>Suivez moi</p>
+          <p><FormattedMessage id="app.content.home.side.follow"/></p>
         </li>
         <li className={styles.bar}></li>
         <li>

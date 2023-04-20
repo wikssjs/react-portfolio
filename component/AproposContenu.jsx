@@ -1,3 +1,4 @@
+import { FormattedMessage } from "react-intl";
 import styles from "../styles/Apropos.module.css";
 import { useRef, useEffect, useState } from "react";
 
@@ -21,45 +22,28 @@ export default function AproposContenu() {
     >
       <div className={`${styles.container} container d-flex flex-column gap-5`}>
         <h1>
-          <span>A</span>
-          <span>p</span>
-          <span>r</span>
-          <span>o</span>
-          <span>p</span>
-          <span>o</span>
-          <span>s</span>
+          <span> <FormattedMessage id="app.content.about.about"/></span>
+         
         </h1>
 
         <div className="d-flex align-items-end justify-content-center">
           <div className={`${styles.contenu}`}>
             <p>
-              Bienvenue sur mon portfolio en ligne ! Je suis un développeur web
-              et Android passionné et talentueux, fier de mes compétences et de
-              mon parcours. Au cours de mes études et de mes projets personnels,
-              j'ai affiné mes compétences en développement web et Android, et je
-              suis prêt à les utiliser pour ajouter de la valeur à tout projet
-              sur lequel je travaillerai.
+              <FormattedMessage id="app.content.about.about.text1"/>
             </p>
             <p>
-              Je suis un travailleur déterminé et créatif, capable de concevoir
-              et de développer des applications web et Android performantes et
-              esthétiquement plaisantes. Je suis également en mesure de
-              travailler en équipe, ce qui est un atout important pour tout
-              projet de développement de logiciels.
+              <FormattedMessage id="app.content.about.about.text2"/>
             </p>
             <p>
-              Sur ce site, vous trouverez un aperçu de mes compétences, de mes
-              projets et de mon parcours. J'espère que vous prendrez le temps de
-              parcourir mon portfolio et de découvrir comment je peux ajouter de
-              la valeur à vos projets de développement de logiciels. N'hésitez
-              pas à me contacter si vous avez des questions ou souhaitez en
-              savoir plus sur mes compétences et mon expérience.
+              <FormattedMessage id="app.content.about.about.text3"/>
             </p>
           </div>
         </div>
       </div>
       <div className={`${styles.competences} h-100 d-flex flex-column gap-5`}>
-        <h1>Compétences</h1>
+        <h1>
+          <span> <FormattedMessage id="app.content.about.skills"/></span>
+        </h1>
         <div className="d-flex flex-wrap gap-3">
           <h2
             className={`${styles.html} animate__animated   animate__rubberBand`}

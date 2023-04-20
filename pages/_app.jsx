@@ -1,5 +1,6 @@
 import "normalize.css/normalize.css";
 import "../styles/globals.css";
+import { LanguageProvider, LocaleProvider } from "../component/LocalProvider";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "animate.css";
@@ -65,9 +66,12 @@ export default function App({ Component, pageProps }) {
     
     `}
       </style>
+      <LocaleProvider>
+
       <Layout setDark={setDark} dark={dark}>
         <Component {...pageProps} />
       </Layout>
+      </LocaleProvider>
     </>
   );
 }

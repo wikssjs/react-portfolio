@@ -1,6 +1,7 @@
 import styles from "../styles/Contact.module.css";
 import Head from "next/head";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 /**
  *
@@ -104,9 +105,9 @@ export default function Contact() {
             className={`${styles.contact_form} d-flex flex-column`}
             noValidate
           >
-            <h2>Contactez-Moi</h2>
+            <h2><FormattedMessage id="app.content.contact.form.title"/> </h2>
             <label>
-              Nom
+              <FormattedMessage id="app.content.contact.form.name"/>
               <input
                 type="text"
                 required
@@ -148,7 +149,8 @@ export default function Contact() {
             )}
             <input className="d-none" name="bot-field" />
             <button type="submit">
-              Envoyer <i className="bi bi-arrow-right"></i>
+              <FormattedMessage id="app.content.contact.form.submit"/>
+               <i className="bi bi-arrow-right"></i>
             </button>
           </form>
         </div>
