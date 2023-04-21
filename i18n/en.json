@@ -29,7 +29,7 @@
   "app.content.project.android.blackjack": "A Blackjack application with Android Studio and Java. This application allows users to play Blackjack using standard game rules. Features include the ability to place bets, draw cards, stay, double or split. The application is designed to be realistic and fun, adhering to standard Blackjack rules.",
   "app.content.project.android.todo": "A todo application",
 
-  "app.content.project.web.bug": "A bug tracker still in development that allows tracking bugs and tasks of a project using ReactJS, NodeJS, ExpressJS, SQLITE technologies.This application allows users to create projects, create tasks, and assign them to users.",
+  "app.content.project.web.bug": "A bug tracker still that allows tracking bugs and tasks of a project using ReactJS, NodeJS, ExpressJS, SQLITE technologies.This application allows users to create projects, create tasks, and assign them to users.",
   "app.content.project.web.chat": "A real-time chat application using NodeJS, ExpressJS, SQLite, Tailwind, and SSE technologies. This application includes three chat rooms for Java, HTML, and C# users. I added a non-user feature to allow users to participate without creating an account, and I also implemented a secure password system for registered users.",
   "app.content.project.web.chat.warning": "The application may take time to load",
   "app.content.project.web.tiktok": "This application allows users to easily download TikTok videos from their URL. I used ASP.NET to create a simple and user-friendly interface, and I also set up an API to communicate with TikTok servers and extract the desired videos.",

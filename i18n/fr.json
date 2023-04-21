@@ -32,7 +32,7 @@
     "app.content.project.android.todo": "Une application todo",
 
 
-    "app.content.project.web.bug": "un bug tracker encore en developpement qui permet de suivre les bugs et les taches d'un projet en utilisant les technologies ReactJS, NodeJS, ExpressJS, SQLITE. Cette application permet aux utilisateurs de créer des projets, de créer des taches et de les assigner à des utilisateurs.",
+    "app.content.project.web.bug": "un bug tracker  qui permet de suivre les bugs et les taches d'un projet en utilisant les technologies ReactJS, NodeJS, ExpressJS, SQLITE. Cette application permet aux utilisateurs de créer des projets, de créer des taches et de les assigner à des utilisateurs.",
     "app.content.project.web.chat": "Une application de chat en temps réel en utilisant les technologies NodeJS, ExpressJS, SQLite, Tailwind et SSE. Cette application comprend trois salles de discussion pour les utilisateurs Java, HTML et C#. J'ai ajouté une fonctionnalité de non-utilisateur pour permettre aux utilisateurs de participer sans créer de compte, et j'ai également mis en place un système de mot de passe sécurisé pour les utilisateurs enregistrés.",
     "app.content.project.web.chat.warning": "L'application peut prendre du temps à charger",
     "app.content.project.web.tiktok": "Cette application permet aux utilisateurs de télécharger facilement des vidéos TikTok à partir de leur URL. J'ai utilisé ASP.NET pour créer une interface utilisateur simple et conviviale, et j'ai également mis en place un API pour communiquer avec les serveurs TikTok et extraire les vidéos souhaitées.",
