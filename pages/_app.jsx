@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import "normalize.css/normalize.css";
 import "../styles/globals.css";
 import { LanguageProvider, LocaleProvider } from "../component/LocalProvider";
@@ -70,6 +71,7 @@ export default function App({ Component, pageProps }) {
 
       <Layout setDark={setDark} dark={dark}>
         <Component {...pageProps} />
+        <Analytics/>
       </Layout>
       </LocaleProvider>
     </>

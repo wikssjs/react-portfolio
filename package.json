@@ -12,6 +12,7 @@
   "dependencies": {
     "@formspree/react": "^2.4.1",
     "@next/font": "13.1.1",
+    "@vercel/analytics": "^1.0.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
