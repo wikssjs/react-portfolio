@@ -51,7 +51,7 @@ export default function Accueil() {
                   className="btn btn-lg border-primary shadow-lg"
                   id="download"
                 >
-                  <a download href="/JamesBell.pdf">
+                  <a download href="/JamesUpdateCV.pdf">
                     <FormattedMessage id="app.content.home.cv"/>
                   </a>
                   <i className="bi bi-download animate__animated animate__bounceInDown"></i>
