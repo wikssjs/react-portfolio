@@ -68,7 +68,6 @@ export default function App({ Component, pageProps }) {
     `}
       </style>
       <LocaleProvider>
-
       <Layout setDark={setDark} dark={dark}>
         <Component {...pageProps} />
         <Analytics/>

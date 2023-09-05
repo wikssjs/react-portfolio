@@ -9,7 +9,8 @@ import { FormattedMessage } from "react-intl";
  */
 const projet = [
   {
-    description:<FormattedMessage id="app.content.project.android.ecommerce"/>,  },
+    description:<FormattedMessage id="app.content.project.android.ecommerce"/>,  
+  },
 
   {
     description: <FormattedMessage id="app.content.project.android.blackjack"/>,  },
@@ -25,13 +26,16 @@ const projet = [
     description: <FormattedMessage id="app.content.project.web.chat"/>,
     warning: <FormattedMessage id="app.content.project.web.chat.warning"/>,  },
   {
-    description: <FormattedMessage id="app.content.project.web.ticktok"/>,  },
+    description: <FormattedMessage id="app.content.project.web.tiktok"/>,  },
   {
     description: <FormattedMessage id="app.content.project.web.haiti"/>,
   },
   {
     description: <FormattedMessage id="app.content.project.web.bug"/>, 
   },
+  {
+    description: <FormattedMessage id="app.content.project.web.amazemart"/>, 
+  }
 ];
 
 export default function ProjetElement({

@@ -7,6 +7,7 @@ import tiktok_logo from "../public/tiktok_logo.jpg";
 import haiti from "../public/haiti.png";
 import chat from "../public/chat.png";
 import bug from "../public/bug.png";
+import amazeMart from "../public/amazemart.jpg";
 
 /**
  * ma page de projet web
@@ -33,6 +34,16 @@ export default function Projet2() {
       </Head>
 
       <ProjetGrid titre="Website" icon="bi bi-globe">
+        <ProjetElement
+          id={10}
+          image={amazeMart}
+          type="Web development"
+          nom="AmazeMart"
+          video="/videos/amazemart.mp4"
+          github="https://github.com/wikssjs/AmazeMart"
+          lien="https://amazemart.vercel.app"
+          languages={["NextJs -", "NodeJs -", "Sqlite -", "Boostrap"]}
+        />
 
         <ProjetElement
           id={9}
@@ -99,7 +110,9 @@ export default function Projet2() {
           lien="https://james-quiz.netlify.app"
           languages={["HTML -", "CSS -", "JAVASCIPT -", "API"]}
         />
-        
+
+
+
       </ProjetGrid>
     </>
   );
