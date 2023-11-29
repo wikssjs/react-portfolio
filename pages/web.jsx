@@ -63,7 +63,7 @@ export default function Projet2() {
           nom="Real Time Chat Room"
           video="/videos/message.mp4"
           github="https://github.com/wikssjs/messaging_app"
-          lien="https://message-xz6i.onrender.com"
+          lien="https://realtimechat-app-0825e678ed39.herokuapp.com/connexion"
           languages={["NODEJS -", "EXPRESS -", "TAILWIND -", "CSS -", "SQLITE"]}
         />
 
