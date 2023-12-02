@@ -2,19 +2,22 @@
    <xml version="1.0" encoding="UTF-8">
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <url>
-       <loc>https://www.jamesbell.vercel.app</loc>
+       <loc>https://www.jameswikss.ca</loc>
      </url>
 
        <url>
-       <loc>https://www.jamesbell.vercel.app/apropos</loc>
+       <loc>https://www.jameswikss.ca/apropos</loc>
      </url>
 
-       <url>
-       <loc>https://www.jamesbell.vercel.app/projets</loc>
+      <url>
+       <loc>https://www.jameswikss.ca/web</loc>
      </url>
-
+     
+      <url>
+       <loc>https://www.jameswikss.ca/android</loc>
+     </url>
        <url>
-       <loc>https://www.jamesbell.vercel.app/contact</loc>
+       <loc>https://www.jameswikss.ca/contact</loc>
      </url>
    </urlset>
    </xml>

@@ -2,4 +2,4 @@
 user-agent: *
 Allow: /
 
-Sitemap: https://www.jamesbell.vercel.app/sitemap.xml
+Sitemap: https://www.jameswikss.ca/sitemap.xml
