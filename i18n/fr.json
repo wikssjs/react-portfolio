@@ -5,20 +5,44 @@
     "app.menu.project": "Projets",
     "app.menu.project.web": "Web",
     "app.menu.project.android": "Android",
+    
+    "app.nav.home": "Accueil",
+    "app.nav.about": "À propos",
+    "app.nav.skills": "Compétences",
+    "app.nav.projects": "Projets",
+    "app.nav.contact": "Contact",
+    "app.nav.cv": "CV",
+    
     "app.content.home.iam": "Je Suis Un",
     "app.content.home.type1": "Développeur Web",
     "app.content.home.type2": "Développeur Android",
-    "app.content.home.text": "Je suis un développeur compétent en CSS, HTML, JavaScript et frameworks. Je m' efforce de créer des applications et des sites web performants en apprenant de nouveaux outils et en me perfectionnant.",
-    "app.content.home.cv": "Telecharger CV",
+    "app.content.home.text": "Je suis un développeur compétent en CSS, HTML, JavaScript et frameworks. Je m'efforce de créer des applications et des sites web performants en apprenant de nouveaux outils et en me perfectionnant.",
+    "app.content.home.cv": "Télécharger CV",
     "app.content.home.contact": "Contactez-moi",
     "app.content.home.side.follow": "Suivez moi",
 
-
-    "app.content.about.about": "Apropos",
+    "app.content.about.title": "À propos",
+    "app.content.about.subtitle": "Qui suis-je",
+    "app.content.about.description": "Je suis un développeur web passionné avec plus de 2 ans d'expérience dans la création d'applications web modernes et réactives. J'aime résoudre des problèmes complexes et créer des expériences utilisateur intuitives et attrayantes.",
+    "app.content.about.name": "Nom",
+    "app.content.about.email": "Email",
+    "app.content.about.from": "De",
+    "app.content.about.freelance": "Freelance",
+    "app.content.about.available": "Disponible",
+    "app.content.about.download": "Télécharger CV",
+    "app.content.about.years": "Années d'expérience",
+    "app.content.about.projects": "Projets complétés",
+    
+    "app.content.about.about": "À propos",
     "app.content.about.about.text1": "Bienvenue sur mon portfolio en ligne ! Je suis un développeur web et Android passionné et talentueux, fier de mes compétences et de mon parcours. Au cours de mes études et de mes projets personnels, j'ai affiné mes compétences en développement web et Android, et je suis prêt à les utiliser pour ajouter de la valeur à tout projet sur lequel je travaillerai.",
     "app.content.about.about.text2": "Je suis un travailleur déterminé et créatif, capable de concevoir et de développer des applications web et Android performantes et esthétiquement plaisantes. Je suis également en mesure de travailler en équipe, ce qui est un atout important pour tout projet de développement de logiciels.",
     "app.content.about.about.text3": "Sur ce site, vous trouverez un aperçu de mes compétences, de mes projets et de mon parcours. J'espère que vous prendrez le temps de parcourir mon portfolio et de découvrir comment je peux ajouter de la valeur à vos projets de développement de logiciels. N'hésitez pas à me contacter si vous avez des questions ou souhaitez en savoir plus sur mes compétences et mon expérience.",
 
+    "app.content.skills.title": "Compétences",
+    "app.content.skills.frontend": "Front-end",
+    "app.content.skills.backend": "Back-end",
+    "app.content.skills.other": "Autres compétences",
+    
     "app.content.about.skills": "Compétences",
     "app.content.about.education.subtitle": "DEC EN PROGRAMMTION",
     "app.content.about.education.college": "Collège La Cité 2023",
@@ -26,7 +50,8 @@
     "app.content.about.education.text2": "Au fil des années, j'ai travaillé dur pour améliorer mes compétences en programmation informatique et j'ai participé à de nombreux projets qui m'ont permis de mettre en pratique ce que j'ai appris en classe.",
     "app.content.about.education.text3": "Je suis reconnaissant envers mon collège pour m'avoir donné les connaissances et les outils nécessaires pour réussir dans ce domaine passionnant de la programmation informatique. Je suis convaincu que ces compétences seront utiles pour moi dans l'avenir et je suis prêt à continuer à apprendre et à développer mes compétences en programmation.",
 
-
+    "app.content.projects.title": "Projets",
+    
     "app.content.project.android.ecommerce": "Cette application Android développée en Java utilise une API RapidAPI pour offrir des fonctionnalités telles que la recherche de données, la visualisation en temps réel, les paiements via PayPal et carte de crédit, et la gestion d'un panier d'achat. Les utilisateurs peuvent ajouter des articles, consulter leur panier et finaliser leur achat en toute simplicité. L'application est facile à utiliser et conçue pour une expérience efficace et intuitive.",
     "app.content.project.android.blackjack": "Une application de Blackjack avec Android Studio et Java. Cette application permet aux utilisateurs de jouer au Blackjack en utilisant les règles standard du jeu. Les fonctionnalités incluent la possibilité de placer des paris, de tirer des cartes, de rester, de doubler ou de se couvrir. L'application est conçue pour être réaliste et amusante, elle respecte les règles standard du Blackjack.",
     "app.content.project.android.todo": "Une application todo",
@@ -40,8 +65,26 @@
     "app.content.project.web.weather": "Une application de météo qui utilise une API pour fournir des informations en temps réel sur les conditions météorologiques. Les fonctionnalités incluent la possibilité de rechercher des informations météorologiques par ville ou par géolocalisation, de consulter les prévisions à court et à long terme, de consulter les données sur la température, la pression atmosphérique, l'humidité, les vents, et les précipitations. L'application est conçue pour être facile à utiliser et à comprendre pour les utilisateurs.",
     "app.content.project.web.quiz": "Une application de quiz qui génère 20 questions aléatoires en utilisant une API. Cette application permet aux utilisateurs de tester leurs connaissances dans divers domaines en répondant à des questions aléatoires générées par l'API. Les fonctionnalités incluent la possibilité de répondre aux questions dans un temps limité, de recevoir les résultats à la fin du quiz, avec un score en points obtenus et de visualiser le temps restant pour finir le quiz. L'application utilise une interface utilisateur intuitive pour une expérience de jeu agréable.",
 
-
+    "app.content.contact.title": "Contact",
+    "app.content.contact.getInTouch": "Entrer en contact",
+    "app.content.contact.description": "N'hésitez pas à me contacter pour toute question ou opportunité de collaboration. Je suis toujours ouvert à discuter de nouveaux projets passionnants.",
+    "app.content.contact.location": "Localisation",
+    "app.content.contact.email": "Email",
+    "app.content.contact.phone": "Téléphone",
+    "app.content.contact.sendMessage": "Envoyez-moi un message",
+    "app.content.contact.name": "Nom",
+    "app.content.contact.subject": "Sujet",
+    "app.content.contact.message": "Message",
+    "app.content.contact.send": "Envoyer",
+    "app.content.contact.sending": "Envoi en cours...",
+    "app.content.contact.success": "Votre message a été envoyé avec succès!",
+    
     "app.content.contact.form.title": "Contactez-Moi",
     "app.content.contact.form.name": "Nom",
-    "app.content.contact.form.submit": "Envoyer"
+    "app.content.contact.form.submit": "Envoyer",
+    
+    "app.footer.description": "Développeur web passionné, créant des expériences numériques modernes et intuitives.",
+    "app.footer.quickLinks": "Liens Rapides",
+    "app.footer.contact": "Contact",
+    "app.footer.rights": "Tous droits réservés."
 }

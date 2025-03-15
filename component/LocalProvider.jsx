@@ -8,7 +8,7 @@ const translations = {
     fr: FrenchData
 }
 
-const  LocaleContext = createContext();
+const LocaleContext = createContext();
 
 export function LocaleProvider({children}) {
     const [locale, setLocale] = useState('fr');
@@ -19,7 +19,7 @@ export function LocaleProvider({children}) {
             localStorage.getItem('locale') || 
             (translations[navigatorLanguage] ? navigatorLanguage : 'fr');
         setLocale(defaultLanguage);
-    });
+    }, []);
 
     return <LocaleContext.Provider value={[locale, setLocale]}>
         <IntlProvider locale={locale} messages={translations[locale]}>

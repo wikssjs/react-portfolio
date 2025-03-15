@@ -1,23 +1,31 @@
-  <!-- public/sitemap.xml -->
-   <xml version="1.0" encoding="UTF-8">
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>https://www.jameswikss.ca</loc>
-     </url>
-
-       <url>
-       <loc>https://www.jameswikss.ca/apropos</loc>
-     </url>
-
-      <url>
-       <loc>https://www.jameswikss.ca/web</loc>
-     </url>
-     
-      <url>
-       <loc>https://www.jameswikss.ca/android</loc>
-     </url>
-       <url>
-       <loc>https://www.jameswikss.ca/contact</loc>
-     </url>
-   </urlset>
-   </xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Page d'accueil en français (par défaut) -->
+  <url>
+    <loc>https://www.jameswikss.ca/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Page d'accueil en anglais -->
+  <url>
+    <loc>https://www.jameswikss.ca/en</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Autres pages si vous en avez (ajoutez selon votre structure) -->
+  <!-- Exemple:
+  <url>
+    <loc>https://www.jameswikss.ca/blog</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+</urlset>

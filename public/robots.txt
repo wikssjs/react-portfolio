@@ -1,0 +1,17 @@
+# robots.txt pour James Bell Portfolio
+User-agent: *
+Allow: /
+
+# Permettre à tous les robots d'explorer le site
+Sitemap: https://www.jameswikss.ca/sitemap.xml
+
+# Bloquer certains dossiers si nécessaire
+# Disallow: /private/
+# Disallow: /admin/
+
+# Règles spécifiques pour certains robots (si nécessaire)
+# User-agent: Googlebot
+# Allow: /
+
+# User-agent: Bingbot
+# Allow: / 

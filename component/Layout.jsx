@@ -1,38 +1,60 @@
-import Contact_links from "./Contact_Links";
-import Header from "./Header";
-import styles from "../styles/Layout.module.css";
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import styles from '../styles/Layout.module.css';
 
 /**
  * Layout de mon site web
- * @param {children,setPage} param0
+ * @param {children, locale, changeLanguage} param0
  * @returns header, contenu de la page et mes contacts
  */
-export default function Layout({ children, setPage, setDark, dark }) {
-  return (
-    <>
-      <div className={`${styles.wrapper}`}>
-        <Header setPage={setPage} />
-        {children}
-        <Contact_links />
-        <div className="darkButton">
-          <h1>Dark Mode</h1>
+export default function Layout({ children }) {
+  const router = useRouter();
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
-          <input
-            type="checkbox"
-            className="checkbox d-none"
-            name=""
-            id="checkbox"
-            onChange={() => {
-              setDark(!dark);
-            }}
-          />
-          <label htmlFor="checkbox" className="label">
-            <i className="bi bi-moon"></i>
-            <i className="bi bi-sun"></i>
-            <div className="ball"></div>
-          </label>
-        </div>
-      </div>
-    </>
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [router.asPath]);
+
+  // Show/hide back to top button based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Fonction pour remonter en haut de la page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <div className={styles.layout}>
+      <Navbar />
+      <main className={styles.main}>{children}</main>
+      <Footer />
+
+      {showBackToTop && (
+        <button 
+          className={styles.backToTop} 
+          onClick={scrollToTop}
+          aria-label="Retour en haut"
+        >
+          <i className="bi bi-arrow-up"></i>
+        </button>
+      )}
+    </div>
   );
 }
