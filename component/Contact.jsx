@@ -25,15 +25,15 @@ export default function Contact() {
       icon: 'bi-envelope',
       title: 'app.content.contact.email',
       titleFallback: 'Email',
-      content: 'jamesbell@gmail.com',
+      content: 'belljamesp@gmail.com',
       link: 'mailto:jamesbell@gmail.com'
     },
     {
       icon: 'bi-phone',
       title: 'app.content.contact.phone',
       titleFallback: 'Phone',
-      content: '+1 (514) 123-4567',
-      link: 'tel:+15141234567'
+      content: '+1 555 555 55555',
+      link: ''
     }
   ];
   
@@ -156,7 +156,7 @@ export default function Contact() {
               <a href="https://www.linkedin.com/in/james-bell-b9b1b9237/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="bi bi-linkedin"></i>
               </a>
-              <a href="mailto:jamesbell@gmail.com" aria-label="Email">
+              <a href="mailto:belljamesp@gmail.com," aria-label="Email">
                 <i className="bi bi-envelope-fill"></i>
               </a>
             </div>

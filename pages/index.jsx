@@ -14,6 +14,7 @@ import tiktok_logo from '../public/tiktok_logo.jpg';
 import haiti from '../public/haiti.png';
 import meteo from '../public/meteo.png';
 import quiz from '../public/quiz.png';
+import fokuz from '../public/fokuz.png';
 
 // Images pour les projets Android
 import ecommerce2 from '../public/ecommerce2.png';
@@ -33,6 +34,16 @@ export default function Home() {
     setWebProjects([
       {
         id: 10,
+        title: 'Fokuz Blog',
+        description: 'A modern blog platform with a clean design, and content management system.',
+        image: fokuz,
+        type: 'Web development',
+        nom: 'Fokuz Blog',
+        languages: ['Nextjs', 'Strapi', 'PosgressSQL'],
+        lien: 'https://www.fokuz.ca'
+      },
+      {
+        id: 9,
         image: amazeMart,
         type: "Web development",
         nom: "AmazeMart",
@@ -42,7 +53,7 @@ export default function Home() {
         languages: ["NextJs", "NodeJs", "Sqlite", "Boostrap"]
       },
       {
-        id: 9,
+        id: 8,
         image: bug,
         type: "Web development",
         nom: "Bug Tracker",
@@ -72,7 +83,7 @@ export default function Home() {
         languages: ["C#", "ASP.NET", "BOOSTRAP", "API"]
       },
       {
-        id: 8,
+        id: 5,
         image: haiti,
         type: "Web development",
         nom: "Haiti",

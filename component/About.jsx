@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import SafeFormattedMessage from './utils/TranslationFallback';
 import styles from '../styles/About.module.css';
+import about from '../public/about.jpg'
 
 export default function About() {
   return (
@@ -17,8 +18,8 @@ export default function About() {
           <div className={styles.imageWrapper} data-aos="fade-right" data-aos-delay="200">
             <div className={styles.imageContainer}>
               <div className={styles.imageBg}></div>
-              <Image
-                src="/about.png"
+              <img
+                src="about.jpg"
                 alt="About James Bell"
                 width={400}
                 height={400}
@@ -30,13 +31,13 @@ export default function About() {
             
             <div className={styles.experience}>
               <div className={styles.experienceItem} data-aos="zoom-in" data-aos-delay="400">
-                <span className={styles.experienceNumber}>2+</span>
+                <span className={styles.experienceNumber}>3+</span>
                 <span className={styles.experienceText}>
                   <SafeFormattedMessage id="app.content.about.years" fallback="Years of Experience" />
                 </span>
               </div>
               <div className={styles.experienceItem} data-aos="zoom-in" data-aos-delay="600">
-                <span className={styles.experienceNumber}>10+</span>
+                <span className={styles.experienceNumber}>20+</span>
                 <span className={styles.experienceText}>
                   <SafeFormattedMessage id="app.content.about.projects" fallback="Completed Projects" />
                 </span>

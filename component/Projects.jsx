@@ -7,8 +7,18 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all');
   
   const projects = [
+    
     {
       id: 1,
+      title: 'Fokuz Blog',
+      description: 'A modern blog platform with a clean design, and content management system.',
+      image: '/fokuz.png',
+      category: 'web',
+      technologies: ['Nextjs', 'Strapi', 'PosgressSQL'],
+      link: 'https://www.fokuz.ca'
+    },
+    {
+      id: 2,
       title: 'E-commerce Website',
       description: 'A modern e-commerce platform with product catalog, cart functionality, and secure checkout.',
       image: '/project1.jpg',
@@ -18,7 +28,7 @@ export default function Projects() {
       demo: 'https://github.com/wikssjs'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Task Management App',
       description: 'A productivity application for managing tasks, projects, and team collaboration.',
       image: '/project2.jpg',
@@ -28,7 +38,7 @@ export default function Projects() {
       demo: 'https://github.com/wikssjs'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Portfolio Website',
       description: 'A responsive portfolio website showcasing projects and skills with modern design.',
       image: '/project3.jpg',
@@ -38,7 +48,7 @@ export default function Projects() {
       demo: 'https://github.com/wikssjs'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Weather Dashboard',
       description: 'A weather application providing real-time forecasts and weather data visualization.',
       image: '/project4.jpg',
@@ -48,7 +58,7 @@ export default function Projects() {
       demo: 'https://github.com/wikssjs'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Social Media Platform',
       description: 'A social networking platform with user profiles, posts, and real-time messaging.',
       image: '/project5.jpg',
@@ -58,7 +68,7 @@ export default function Projects() {
       demo: 'https://github.com/wikssjs'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Fitness Tracker',
       description: 'A mobile application for tracking workouts, nutrition, and fitness progress.',
       image: '/project6.jpg',

@@ -42,6 +42,11 @@
     "app.content.skills.frontend": "Front-end",
     "app.content.skills.backend": "Back-end",
     "app.content.skills.other": "Autres compétences",
+    "app.content.skills.tools": "Outils",
+    "app.content.skills.expertise": "Expertise",
+    "app.content.skills.expert": "Expert",
+    "app.content.skills.advanced": "Avancé",
+    "app.content.skills.intermediate": "Intermédiaire",
     
     "app.content.about.skills": "Compétences",
     "app.content.about.education.subtitle": "DEC EN PROGRAMMTION",

@@ -47,13 +47,13 @@ export default function Skills() {
       title: 'app.content.skills.backend',
       fallback: 'Back-end',
       icon: 'bi-server',
-      skills: ['Node.js', 'Express', 'PHP', 'MySQL', 'MongoDB', 'Firebase', 'RESTful APIs', 'GraphQL']
+      skills: ['Node.js', 'Express', 'PHP', 'MySQL', 'MongoDB', 'Firebase', 'RESTful APIs', 'GraphQL', 'PHP', 'Sage 10']
     },
     tools: {
       title: 'app.content.skills.tools',
       fallback: 'Tools & Workflow',
       icon: 'bi-tools',
-      skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Docker', 'Webpack', 'NPM', 'Agile/Scrum']
+      skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Docker', 'Webpack', 'NPM', 'Agile/Scrum', 'WordPress']
     }
   };
 
